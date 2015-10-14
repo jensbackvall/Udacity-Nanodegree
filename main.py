@@ -66,6 +66,8 @@ class Post(webapp2.RequestHandler):
 		time.sleep(0.1)
 #Then I write the content to the database.
 		comment_container.put()
+#And finally I redirect back to the main page. Thank you to Udacity coach Jonah for helping me here!
+		self.redirect('/')
 		
 
 
