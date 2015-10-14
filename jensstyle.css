@@ -1,0 +1,247 @@
+body {
+	background-color: black;
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/88/Hapgood_Pond_-_Flickr_-_USDAgov.jpg");
+	padding-top: 25px;
+	padding-right: 15px;
+	padding-bottom: 25px;
+	padding-left: 15px;
+/* I realize that I can write this in
+ shorthand form, but since this is all
+ new to me, I have decided to keep the
+  paddings separated for now */
+  	font-family: Arial;
+  	font-size: 1.5em;
+  	max-width: 1200px;
+ /* Going for the same width as the example,
+ as I guess there is a good reason for this
+ choice of size, although I couldn't find one.
+ I could have just set max-width to none, but decided
+ not to :-P */
+ 	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+	color: #3D5C00;
+	text-shadow: 5px 5px 15px #666633;
+	background-color: #B8B8BA;
+	opacity: 0.9;
+	-moz-opacity: 0.9;
+	border-style: solid;
+	border-width: medium;
+	border-radius: 10px;
+	border-color: #909091;
+}
+
+header {
+	background-color: #c5ceb2;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 38px;
+	text-align: center;
+	color: #808000;
+	border-radius: 5px;
+	border: 0px;
+	height: 42px;
+}
+
+footer {
+	background-color: #c5ceb2;
+	font-family: Arial;
+	font-size: 18px;
+	text-align: center;
+	color: #808000;
+	border-radius: 5px;
+	border: 0px;
+	height: 42px;
+}
+
+/* The text-shadow may
+look cheesy, but it was fun to play with */
+.contents {
+	display: flex;
+	background-color: #CDCDCF;
+	opacity: 0.9;
+	-moz-opacity: 0.9;
+	border-style: solid;
+	border-width: medium;
+	border-radius: 12px;
+	border-color: #A4A4A6;
+	padding: 15px;
+	margin: 35px;
+}
+
+}
+
+.lesson-menu {
+/*	display: inline-block; */
+	width: 30%;
+	float: left;
+	padding: 10px;
+	margin: 10px;
+}
+
+.lesson-menu-2 {
+/*	display: inline-block; */
+	width: 30%;
+	float: left;
+	padding: 10px;
+	margin: 10px;
+}
+
+.lesson-menu-3 {
+/*	display: inline-block; */
+	width: 30%;
+	float: left;
+	padding: 10px;
+	margin: 10px;
+}
+
+.breaker {
+	float: left;
+	width: 5%;
+}
+
+a:link {
+	color: #3D5C00;
+	text-decoration: none;
+}
+a:visited {
+	color: #3D5C00;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #CDCDCF;
+	background-color: #3D5C00;
+}
+
+.p-center {
+	text-align: center;
+}
+
+p {
+	margin: auto;
+}
+
+li {
+	font-size: 20px;
+	line-height: 45px;
+/* I copied these sizes from Andy's code 
+because of the comment in the code about fat fingers
+and mobile usage,
+but couldn't resist changing the line height by
+one pixel :-P */
+}
+
+.lesson {
+	background-color: #3D5C00;
+	border-radius: 15px;
+	color: #CDCDCF;
+	text-shadow: 5px 5px 15px #212121;
+	text-align: center;
+	padding: 15px;
+	margin: 35px auto;
+}
+
+h2 {
+	margin: auto;
+}
+
+.concept {
+	background-color: #C5CeB2;
+	border-radius: 10px;
+	color: black;
+	text-shadow: none;
+	text-align: left;
+	padding: 20px;
+	margin: 10px auto;
+	border-style: solid;
+	border-width: medium;
+	border-color: black;
+}
+
+.concept-title {
+	color: #871919;
+	text-align: center;
+	font-size: 30px;
+	text-shadow: 5px 5px 10px #7A1616;
+	font-weight: bold;
+}
+
+.concept-description {
+	padding: 10px;
+}
+
+.part-concept {
+	background-color: #D6DDC9;
+	border-radius: 5px;
+	color: black;
+	text-shadow: none;
+	text-align: left;
+	padding: 20px;
+	margin: 10px auto;
+	border-style: solid;
+	border-width: thin;
+	border-color: black;
+}
+
+.part-concept-title {
+	color: #9F4747;
+	text-align: left;
+	font-size: 20px;
+	text-shadow: 5px 5px 10px #871919;
+	font-weight: bold;
+}
+
+table th, td {
+	border: 1px solid #3D5C00;
+	border-collapse: collapse;
+}
+th, td {
+	padding: 15px;
+}
+
+.specialfont-1 {
+	font-family: Arial;
+	color: #3333FF;
+	font-weight: bold;
+}
+/* I created the above specialfont1, becauser I 
+might want to change the aspects of how those
+characters (H, T, M and L) are highlighted in
+the text. */
+
+/* I have considered creating another span
+element called "boldtext", but since I currently
+don't see why I would want to change the
+ properties of all of the text I have in bold, I 
+ have decided to leave that possibility for later.
+ It does seem as if writing a whole span tag every time
+ instead of a b tag would be more time-consuming, even 
+ with copy-paste. */
+
+
+.specialfont-2 {
+	font-family: Arial;
+	color: #7A005C;
+	font-weight: bold;
+}
+
+.specialfont-3 {
+	font-style: italic;
+	color: #7A005C;
+}
+
+.specialfont-4 {
+	font-style: Arial;
+	color: #CC0099;
+	font-weight: bold;
+}
+
+.big_friendly_letters {
+	font-style: Arial;
+	font-weight: bolder;
+	color: red;
+	text-shadow: -1px 0 yellow, 0 1px yellow, 1px 0 yellow, 0 -1px yellow;
+}
