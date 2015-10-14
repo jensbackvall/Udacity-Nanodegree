@@ -1,0 +1,99 @@
+{% extends "index.html" %}
+
+
+<html>
+
+{% block content %}
+
+<h1>STAGE 1: Important Basic Concepts</h1>
+
+<div class="lesson">
+	<h2 id="lesson-I">Lesson 1: The Web and Basic HTML</h2>
+	{% for content in lesson1 %}
+		<div class="concept" id="{{content[0]}}">
+			<div class="concept-title">
+				{{content[1]}}
+			</div>
+			<div class="concept-description">
+				{{content[2] | safe}}				
+			</div>
+		</div>
+	{% endfor %}
+</div>
+
+<div class="lesson">
+	<h2 id="lesson-I">Lesson 2: HTML, CSS, Editors and Structure</h2>
+	{% for content in lesson2 %}
+		<div class="concept" id="{{content[0]}}">
+			<div class="concept-title">
+				{{content[1]}}
+			</div>
+			<div class="concept-description">
+				{{content[2] | safe}}				
+			</div>
+		</div>
+	{% endfor %}
+</div>
+
+<div class="lesson">
+	<h2 id="lesson-I">Lesson 3: CSS Style, Creating the Structure and Checking for Errors</h2>
+	{% for content in lesson3 %}
+		<div class="concept" id="{{content[0]}}">
+			<div class="concept-title">
+				{{content[1]}}
+			</div>
+			<div class="concept-description">
+				{{content[2] | safe}}				
+			</div>
+		</div>
+	{% endfor %}
+</div>
+
+<div class="lesson"> 
+	<div class="concept">
+		<div class="concept-title">If you have comments, suggestions or other feedback, please write them below. Thank you!
+		</div>
+		<br>
+		<form align="center" action="/comments" method="post">
+			Your name:
+			<div>
+				<textarea name="name" rows="1" cols="50"></textarea>
+			</div>
+			Your comment:
+			<div>
+				<textarea name="content" rows="5" cols="100"></textarea>
+			</div>
+			<div>
+				<input type="submit" value="Post Comment">
+			</div>
+		</form>
+		<div class="part-concept">
+			<div class="part-concept-title">
+				Previous Comments:
+			</div>	
+				<br>
+				<br>
+				{% for comment in comments %}
+      				{% if comment.name != '' %}
+        				<b>{{ comment.name }}</b> wrote:
+      				{% else %}
+        				<b>Anonymous</b> wrote:
+      				{% endif %}
+      				{% if comment.content == '' %}
+      					<br>
+      					<br>
+      					<b>ERROR: Your comment is empty. Please write something!</b>
+      					<br>
+      					<br>
+      				{% else %}
+      					<blockquote>{{ comment.content|escape }}</blockquote>
+      				{% endif %}
+    			{% endfor %}
+							
+		</div>
+	</div>
+</div>
+	
+{% endblock %}
+
+</html>
