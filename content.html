@@ -1,9 +1,259 @@
+<!-- Regarding the way I have looped the different sections below: I am aware that I could have worked on creating a tighter structure, thus giving me less code, while bundling my lesson-content in fewer variables. But I want to keep the lessons in separate variables at the moment, so I hope that you will accept this reason and that
+you feel that I have shown that I can render HTML by looping through lessons as shown in this (very looooooong and repetetive) file. -->
+
+
+
 {% extends "index.html" %}
 
 
 <html>
 
 {% block content %}
+
+<!-- First the menus -->
+
+<h1 id = "menu">Table of Contents</h1>
+
+<div class="contents">
+	<div class="lesson-menu">
+		<a href="#lesson-I">The Web and Basic HTML</a>
+			{% for content in lesson1 %}
+				<ul type="circle">
+					<li><a href="#{{content[0]}}">{{content[1]}}</a>
+					</li>
+				</ul>
+			{% endfor %}
+	</div>
+	<div class = "breaker">
+	</div>
+	<div class="lesson-menu">
+		<a href="#lesson-II">HTML, CSS, Editors and Structure</a>
+			{% for content in lesson2 %}
+				<ul type="circle">
+					<li><a href="#{{content[0]}}">{{content[1]}}</a>
+					</li>
+				</ul>
+			{% endfor %}
+	</div>
+	<div class = "breaker">
+	</div>
+	<div class="lesson-menu">
+		<a href="#lesson-III">CSS Style, Creating the Structure and Checking for Errors</a>
+			{% for content in lesson3 %}
+				<ul type="circle">
+					<li><a href="#{{content[0]}}">{{content[1]}}</a>
+					</li>
+				</ul>
+			{% endfor %}
+	</div>
+</div>
+
+<div class = "contents">
+	<div class="lesson-menu">
+		<a href="#lesson-IV">Computers, Programming-Interpreting, Monty Python, Python</a>
+			{% for content in lesson4 %}
+				<ul type="circle">
+					<li><a href="#{{content[0]}}">{{content[1]}}</a>
+					</li>
+				</ul>
+			{% endfor %}
+	</div>
+	<div class = "breaker">
+	</div>
+	<div class="lesson-menu">
+		<a href="#lesson-V">Variables, Strings and Parameters</a>
+			{% for content in lesson5 %}
+				<ul type="circle">
+					<li><a href="#{{content[0]}}">{{content[1]}}</a>
+					</li>
+				</ul>
+			{% endfor %}
+	</div>
+	<div class = "breaker">
+	</div>
+	<div class="lesson-menu">
+		<a href="#lesson-VI">Functions (or procedures)</a>
+			{% for content in lesson6 %}
+				<ul type="circle">
+					<li><a href="#{{content[0]}}">{{content[1]}}</a>
+					</li>
+				</ul>
+			{% endfor %}
+	</div>
+</div>
+
+<div class = "contents">
+	<div class="lesson-menu">
+		<a href="#lesson-VII">Control Flow: if and while loops</a>
+			{% for content in lesson7 %}
+				<ul type="circle">
+					<li><a href="#{{content[0]}}">{{content[1]}}</a>
+					</li>
+				</ul>
+			{% endfor %}
+	</div>
+	<div class = "breaker">
+	</div>
+	<div class="lesson-menu">
+		<a href="#lesson-VIII">Debugging</a>
+			{% for content in lesson8 %}
+				<ul type="circle">
+					<li><a href="#{{content[0]}}">{{content[1]}}</a>
+					</li>
+				</ul>
+			{% endfor %}
+	</div>
+	<div class = "breaker">
+	</div>
+	<div class="lesson-menu">
+		<a href="#lesson-IX">Structured data: List and for loops</a>
+			{% for content in lesson9 %}
+				<ul type="circle">
+					<li><a href="#{{content[0]}}">{{content[1]}}</a>
+					</li>
+				</ul>
+			{% endfor %}
+	</div>
+</div>
+
+<div class = "contents">
+	<div class="lesson-menu">
+		<a href="#lesson-X">Solving Problems</a>
+			{% for content in lesson10 %}
+				<ul type="circle">
+					<li><a href="#{{content[0]}}">{{content[1]}}</a>
+					</li>
+				</ul>
+			{% endfor %}
+	</div>
+	<div class = "breaker">
+	</div>
+	<div class="lesson-menu">
+		<a href="#lesson-XI">Abstraction and OOP</a>
+			{% for content in lesson11 %}
+				<ul type="circle">
+					<li><a href="#{{content[0]}}">{{content[1]}}</a>
+					</li>
+				</ul>
+			{% endfor %}
+	</div>
+	<div class = "breaker">
+	</div>
+	<div class="lesson-menu">
+		<a href="#lesson-XII">Using Built-in Functions</a>
+			{% for content in lesson12 %}
+				<ul type="circle">
+					<li><a href="#{{content[0]}}">{{content[1]}}</a>
+					</li>
+				</ul>
+			{% endfor %}
+	</div>
+</div>
+
+<div class = "contents">
+	<div class="lesson-menu">
+		<a href="#lesson-XIII">Classes</a>
+			{% for content in lesson13 %}
+				<ul type="circle">
+					<li><a href="#{{content[0]}}">{{content[1]}}</a>
+					</li>
+				</ul>
+			{% endfor %}
+	</div>
+	<div class = "breaker">
+	</div>
+	<div class="lesson-menu">
+		<a href="#lesson-XIV">Networks</a>
+			{% for content in lesson14 %}
+				<ul type="circle">
+					<li><a href="#{{content[0]}}">{{content[1]}}</a>
+					</li>
+				</ul>
+			{% endfor %}
+	</div>
+	<div class = "breaker">
+	</div>
+	<div class="lesson-menu">
+		<a href="#lesson-XV">Important Terminology</a>
+			{% for content in lesson15 %}
+				<ul type="circle">
+					<li><a href="#{{content[0]}}">{{content[1]}}</a>
+					</li>
+				</ul>
+			{% endfor %}
+	</div>
+</div>
+
+<div class = "contents">
+	<div class="lesson-menu">
+		<a href="#lesson-XVI">Forms</a>
+			{% for content in lesson16 %}
+				<ul type="circle">
+					<li><a href="#{{content[0]}}">{{content[1]}}</a>
+					</li>
+				</ul>
+			{% endfor %}
+	</div>
+	<div class = "breaker">
+	</div>
+	<div class="lesson-menu">
+		<a href="#lesson-XVII">Modulus and Dictionaries</a>
+			{% for content in lesson17 %}
+				<ul type="circle">
+					<li><a href="#{{content[0]}}">{{content[1]}}</a>
+					</li>
+				</ul>
+			{% endfor %}
+	</div>
+	<div class = "breaker">
+	</div>
+	<div class="lesson-menu">
+		<a href="#lesson-XVIII">Google App Engine</a>
+			{% for content in lesson18 %}
+				<ul type="circle">
+					<li><a href="#{{content[0]}}">{{content[1]}}</a>
+					</li>
+				</ul>
+			{% endfor %}
+	</div>
+</div>
+
+<div class = "contents">
+	<div class="lesson-menu">
+		<a href="#lesson-XIX">Validation</a>
+			{% for content in lesson19 %}
+				<ul type="circle">
+					<li><a href="#{{content[0]}}">{{content[1]}}</a>
+					</li>
+				</ul>
+			{% endfor %}
+	</div>
+	<div class = "breaker">
+	</div>
+	<div class="lesson-menu">
+		<a href="#lesson-XX">HTML Templates</a>
+			{% for content in lesson20 %}
+				<ul type="circle">
+					<li><a href="#{{content[0]}}">{{content[1]}}</a>
+					</li>
+				</ul>
+			{% endfor %}
+	</div>
+	<div class = "breaker">
+	</div>
+	<div class="lesson-menu">
+		<a href="#lesson-XXI">Datastore</a>
+			{% for content in lesson21 %}
+				<ul type="circle">
+					<li><a href="#{{content[0]}}">{{content[1]}}</a>
+					</li>
+				</ul>
+			{% endfor %}
+	</div>
+</div>
+
+
+<!-- Now the content sections -->
 
 <h1>STAGE 1: Important Basic Concepts</h1>
 
@@ -19,10 +269,16 @@
 			</div>
 		</div>
 	{% endfor %}
+	<form action="#menu">
+    	<input class = "Menu_Button" type="submit" value="Go to Table of Contents">
+	</form>
+	<form action="#comment_section">
+    	<input class = "Comment_Button" type="submit" value="Go to Comments">
+	</form>
 </div>
 
 <div class="lesson">
-	<h2 id="lesson-I">Lesson 2: HTML, CSS, Editors and Structure</h2>
+	<h2 id="lesson-II">Lesson 2: HTML, CSS, Editors and Structure</h2>
 	{% for content in lesson2 %}
 		<div class="concept" id="{{content[0]}}">
 			<div class="concept-title">
@@ -33,10 +289,16 @@
 			</div>
 		</div>
 	{% endfor %}
+	<form action="#menu">
+    	<input class = "Menu_Button" type="submit" value="Go to Table of Contents">
+	</form>
+	<form action="#comment_section">
+    	<input class = "Comment_Button" type="submit" value="Go to Comments">
+	</form>
 </div>
 
 <div class="lesson">
-	<h2 id="lesson-I">Lesson 3: CSS Style, Creating the Structure and Checking for Errors</h2>
+	<h2 id="lesson-III">Lesson 3: CSS Style, Creating the Structure and Checking for Errors</h2>
 	{% for content in lesson3 %}
 		<div class="concept" id="{{content[0]}}">
 			<div class="concept-title">
@@ -47,24 +309,401 @@
 			</div>
 		</div>
 	{% endfor %}
+	<form action="#menu">
+    	<input class = "Menu_Button" type="submit" value="Go to Table of Contents">
+	</form>
+	<form action="#comment_section">
+    	<input class = "Comment_Button" type="submit" value="Go to Comments">
+	</form>
 </div>
 
+<h1>STAGE 2: Introduction to Serious Programming</h1>
+
+<div class="lesson">
+	<h2 id="lesson-IV">Lesson 1: Computers, Programming-Interpreting, Monty Python, Python</h2>
+	{% for content in lesson4 %}
+		<div class="concept" id="{{content[0]}}">
+			<div class="concept-title">
+				{{content[1]}}
+			</div>
+			<div class="concept-description">
+				{{content[2] | safe}}				
+			</div>
+		</div>
+	{% endfor %}
+	<form action="#menu">
+    	<input class = "Menu_Button" type="submit" value="Go to Table of Contents">
+	</form>
+	<form action="#comment_section">
+    	<input class = "Comment_Button" type="submit" value="Go to Comments">
+	</form>
+</div>
+
+<div class="lesson">
+	<h2 id="lesson-V">Lesson 2: Variables, Strings and Parameters</h2>
+	{% for content in lesson5 %}
+		<div class="concept" id="{{content[0]}}">
+			<div class="concept-title">
+				{{content[1]}}
+			</div>
+			<div class="concept-description">
+				{{content[2] | safe}}				
+			</div>
+		</div>
+	{% endfor %}
+	<form action="#menu">
+    	<input class = "Menu_Button" type="submit" value="Go to Table of Contents">
+	</form>
+	<form action="#comment_section">
+    	<input class = "Comment_Button" type="submit" value="Go to Comments">
+	</form>
+</div>
+
+<div class="lesson">
+	<h2 id="lesson-VI">Lesson 3: Functions (or procedures)</h2>
+	{% for content in lesson6 %}
+		<div class="concept" id="{{content[0]}}">
+			<div class="concept-title">
+				{{content[1]}}
+			</div>
+			<div class="concept-description">
+				{{content[2] | safe}}				
+			</div>
+		</div>
+	{% endfor %}
+	<form action="#menu">
+    	<input class = "Menu_Button" type="submit" value="Go to Table of Contents">
+	</form>
+	<form action="#comment_section">
+    	<input class = "Comment_Button" type="submit" value="Go to Comments">
+	</form>
+</div>
+
+<div class="lesson">
+	<h2 id="lesson-VII">Lesson 4: Control Flow: if and while loops</h2>
+	{% for content in lesson7 %}
+		<div class="concept" id="{{content[0]}}">
+			<div class="concept-title">
+				{{content[1]}}
+			</div>
+			<div class="concept-description">
+				{{content[2] | safe}}				
+			</div>
+		</div>
+	{% endfor %}
+	<form action="#menu">
+    	<input class = "Menu_Button" type="submit" value="Go to Table of Contents">
+	</form>
+	<form action="#comment_section">
+    	<input class = "Comment_Button" type="submit" value="Go to Comments">
+	</form>
+</div>
+
+<div class="lesson">
+	<h2 id="lesson-VIII">Lesson 5: Debugging</h2>
+	{% for content in lesson8 %}
+		<div class="concept" id="{{content[0]}}">
+			<div class="concept-title">
+				{{content[1]}}
+			</div>
+			<div class="concept-description">
+				{{content[2] | safe}}				
+			</div>
+		</div>
+	{% endfor %}
+	<form action="#menu">
+    	<input class = "Menu_Button" type="submit" value="Go to Table of Contents">
+	</form>
+	<form action="#comment_section">
+    	<input class = "Comment_Button" type="submit" value="Go to Comments">
+	</form>
+</div>
+
+<div class="lesson">
+	<h2 id="lesson-IX">Lesson 6: Structured data: List and for loops</h2>
+	{% for content in lesson9 %}
+		<div class="concept" id="{{content[0]}}">
+			<div class="concept-title">
+				{{content[1]}}
+			</div>
+			<div class="concept-description">
+				{{content[2] | safe}}				
+			</div>
+		</div>
+	{% endfor %}
+	<form action="#menu">
+    	<input class = "Menu_Button" type="submit" value="Go to Table of Contents">
+	</form>
+	<form action="#comment_section">
+    	<input class = "Comment_Button" type="submit" value="Go to Comments">
+	</form>
+</div>
+
+<div class="lesson">
+	<h2 id="lesson-X">Lesson 7: Solving Problems</h2>
+	{% for content in lesson10 %}
+		<div class="concept" id="{{content[0]}}">
+			<div class="concept-title">
+				{{content[1]}}
+			</div>
+			<div class="concept-description">
+				{{content[2] | safe}}				
+			</div>
+		</div>
+	{% endfor %}
+	<form action="#menu">
+    	<input class = "Menu_Button" type="submit" value="Go to Table of Contents">
+	</form>
+	<form action="#comment_section">
+    	<input class = "Comment_Button" type="submit" value="Go to Comments">
+	</form>
+</div>
+
+<h1>STAGE 3: OOP - Object-Oriented Programming</h1>	
+
+<div class="lesson">
+	<h2 id="lesson-XI">Lesson 1: Abstraction and OOP</h2>
+	{% for content in lesson11 %}
+		<div class="concept" id="{{content[0]}}">
+			<div class="concept-title">
+				{{content[1]}}
+			</div>
+			<div class="concept-description">
+				{{content[2] | safe}}				
+			</div>
+		</div>
+	{% endfor %}
+	<form action="#menu">
+    	<input class = "Menu_Button" type="submit" value="Go to Table of Contents">
+	</form>
+	<form action="#comment_section">
+    	<input class = "Comment_Button" type="submit" value="Go to Comments">
+	</form>
+</div>
+
+<div class="lesson">
+	<h2 id="lesson-XII">Lesson 2: Using Built-in Functions</h2>
+	{% for content in lesson12 %}
+		<div class="concept" id="{{content[0]}}">
+			<div class="concept-title">
+				{{content[1]}}
+			</div>
+			<div class="concept-description">
+				{{content[2] | safe}}				
+			</div>
+		</div>
+	{% endfor %}
+	<form action="#menu">
+    	<input class = "Menu_Button" type="submit" value="Go to Table of Contents">
+	</form>
+	<form action="#comment_section">
+    	<input class = "Comment_Button" type="submit" value="Go to Comments">
+	</form>
+</div>
+
+<div class="lesson">
+	<h2 id="lesson-XIII">Lesson 3: Classes</h2>
+	{% for content in lesson13 %}
+		<div class="concept" id="{{content[0]}}">
+			<div class="concept-title">
+				{{content[1]}}
+			</div>
+			<div class="concept-description">
+				{{content[2] | safe}}				
+			</div>
+		</div>
+	{% endfor %}
+	<form action="#menu">
+    	<input class = "Menu_Button" type="submit" value="Go to Table of Contents">
+	</form>
+	<form action="#comment_section">
+    	<input class = "Comment_Button" type="submit" value="Go to Comments">
+	</form>
+</div>
+
+<h1>STAGE 4: Allow Comments</h1>
+
+<div class="lesson">
+	<h2 id="lesson-XIV">Lesson 1: Networks</h2>
+	{% for content in lesson14 %}
+		<div class="concept" id="{{content[0]}}">
+			<div class="concept-title">
+				{{content[1]}}
+			</div>
+			<div class="concept-description">
+				{{content[2] | safe}}				
+			</div>
+		</div>
+	{% endfor %}
+	<form action="#menu">
+    	<input class = "Menu_Button" type="submit" value="Go to Table of Contents">
+	</form>
+	<form action="#comment_section">
+    	<input class = "Comment_Button" type="submit" value="Go to Comments">
+	</form>
+</div>
+
+<div class="lesson">
+	<h2 id="lesson-XV">Lesson 2: Important Terminology</h2>
+	{% for content in lesson15 %}
+		<div class="concept" id="{{content[0]}}">
+			<div class="concept-title">
+				{{content[1]}}
+			</div>
+			<div class="concept-description">
+				{{content[2] | safe}}				
+			</div>
+		</div>
+	{% endfor %}
+	<form action="#menu">
+    	<input class = "Menu_Button" type="submit" value="Go to Table of Contents">
+	</form>
+	<form action="#comment_section">
+    	<input class = "Comment_Button" type="submit" value="Go to Comments">
+	</form>
+</div>
+
+<div class="lesson">
+	<h2 id="lesson-XV">Lesson 3: Forms</h2>
+	{% for content in lesson16 %}
+		<div class="concept" id="{{content[0]}}">
+			<div class="concept-title">
+				{{content[1]}}
+			</div>
+			<div class="concept-description">
+				{{content[2] | safe}}				
+			</div>
+		</div>
+	{% endfor %}
+	<form action="#menu">
+    	<input class = "Menu_Button" type="submit" value="Go to Table of Contents">
+	</form>
+	<form action="#comment_section">
+    	<input class = "Comment_Button" type="submit" value="Go to Comments">
+	</form>
+</div>
+
+<div class="lesson">
+	<h2 id="lesson-XV">Lesson 4: Modulus and Dictionaries</h2>
+	{% for content in lesson17 %}
+		<div class="concept" id="{{content[0]}}">
+			<div class="concept-title">
+				{{content[1]}}
+			</div>
+			<div class="concept-description">
+				{{content[2] | safe}}				
+			</div>
+		</div>
+	{% endfor %}
+	<form action="#menu">
+    	<input class = "Menu_Button" type="submit" value="Go to Table of Contents">
+	</form>
+	<form action="#comment_section">
+    	<input class = "Comment_Button" type="submit" value="Go to Comments">
+	</form>
+</div>
+
+<div class="lesson">
+	<h2 id="lesson-XV">Lesson 5: Google App Engine</h2>
+	{% for content in lesson18 %}
+		<div class="concept" id="{{content[0]}}">
+			<div class="concept-title">
+				{{content[1]}}
+			</div>
+			<div class="concept-description">
+				{{content[2] | safe}}				
+			</div>
+		</div>
+	{% endfor %}
+	<form action="#menu">
+    	<input class = "Menu_Button" type="submit" value="Go to Table of Contents">
+	</form>
+	<form action="#comment_section">
+    	<input class = "Comment_Button" type="submit" value="Go to Comments">
+	</form>
+</div>
+
+<div class="lesson">
+	<h2 id="lesson-XV">Lesson 6: Validation</h2>
+	{% for content in lesson19 %}
+		<div class="concept" id="{{content[0]}}">
+			<div class="concept-title">
+				{{content[1]}}
+			</div>
+			<div class="concept-description">
+				{{content[2] | safe}}				
+			</div>
+		</div>
+	{% endfor %}
+	<form action="#menu">
+    	<input class = "Menu_Button" type="submit" value="Go to Table of Contents">
+	</form>
+	<form action="#comment_section">
+    	<input class = "Comment_Button" type="submit" value="Go to Comments">
+	</form>
+</div>
+
+<div class="lesson">
+	<h2 id="lesson-XV">Lesson 7: HTML Templates</h2>
+	{% for content in lesson20 %}
+		<div class="concept" id="{{content[0]}}">
+			<div class="concept-title">
+				{{content[1]}}
+			</div>
+			<div class="concept-description">
+				{{content[2] | safe}}				
+			</div>
+		</div>
+	{% endfor %}
+	<form action="#menu">
+    	<input class = "Menu_Button" type="submit" value="Go to Table of Contents">
+	</form>
+	<form action="#comment_section">
+    	<input class = "Comment_Button" type="submit" value="Go to Comments">
+	</form>
+</div>
+
+<div class="lesson">
+	<h2 id="lesson-XV">Lesson 8: Datastore</h2>
+	{% for content in lesson21 %}
+		<div class="concept" id="{{content[0]}}">
+			<div class="concept-title">
+				{{content[1]}}
+			</div>
+			<div class="concept-description">
+				{{content[2] | safe}}				
+			</div>
+		</div>
+	{% endfor %}
+	<form action="#menu">
+    	<input class = "Menu_Button" type="submit" value="Go to Table of Contents">
+	</form>
+	<form action="#comment_section">
+    	<input class = "Comment_Button" type="submit" value="Go to Comments">
+	</form>
+</div>
+
+
+<!-- Below is the comment section that let's users comment and see earlier comments -->
+
 <div class="lesson"> 
-	<div class="concept">
+	<div class="concept" id="comment_section">
 		<div class="concept-title">If you have comments, suggestions or other feedback, please write them below. Thank you!
 		</div>
 		<br>
 		<form align="center" action="/comments" method="post">
-			Your name:
+			<label>Your name:
+				<div>
+					<textarea name="name" rows="1" cols="50"></textarea>
+				</div>
+			</label>
+			<label>Your comment:
+				<div>
+					<textarea name="content" rows="5" cols="100"></textarea>
+				</div>
+			</label>
 			<div>
-				<textarea name="name" rows="1" cols="50"></textarea>
-			</div>
-			Your comment:
-			<div>
-				<textarea name="content" rows="5" cols="100"></textarea>
-			</div>
-			<div>
-				<input type="submit" value="Post Comment">
+				<input type="submit" value="Post Your Comment">
 			</div>
 		</form>
 		<div class="part-concept">
@@ -72,28 +711,25 @@
 				Previous Comments:
 			</div>	
 				<br>
-				<br>
 				{% for comment in comments %}
-      				{% if comment.name != '' %}
-        				<b>{{ comment.name }}</b> wrote:
-      				{% else %}
-        				<b>Anonymous</b> wrote:
+					{% if comment.content != '' %}
+      					{% if comment.name != '' %}
+        					<b>{{ comment.name }}</b> wrote:
+      					{% else %}
+        					<b>Anonymous</b> wrote:
+      					{% endif %}
+      					<blockquote>{{ comment.content }}</blockquote>	
       				{% endif %}
-      				{% if comment.content == '' %}
-      					<br>
-      					<br>
-      					<b>ERROR: Your comment is empty. Please write something!</b>
-      					<br>
-      					<br>
-      				{% else %}
-      					<blockquote>{{ comment.content|escape }}</blockquote>
-      				{% endif %}
-    			{% endfor %}
-							
+      				<div>{{ error }}</div>
+    			{% endfor %}				
 		</div>
 	</div>
 </div>
 	
 {% endblock %}
+
+</html>
+
+
 
 </html>
