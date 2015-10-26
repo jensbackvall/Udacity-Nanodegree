@@ -1,0 +1,22 @@
+{% extends "index.html" %}
+
+<html>
+
+{% block content %}
+
+<!-- To create the button below, I borrowed a little script from w3schools at http://www.w3schools.com/jsref/met_his_back.asp 
+I have modified the button through CSS, so it isn't completley borrowed. The modification is also borrowed, but I've modified the modification :-) -->
+
+<div class = "contents">
+	<span class = "big_friendly_letters">ERROR! Sorry, but your comment was empty. Please write something.</span>
+	<button class = "Error_Button" onclick="goBack()">Click here to return to comments</button>
+	<script>
+	function goBack() {
+    	window.history.back();
+	}
+	</script>
+</div>
+
+{% endblock %}
+
+</html>
