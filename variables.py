@@ -1,3 +1,10 @@
+# I am aware that the criteria for the Stage 4 submission specify that there should not be any
+# HTML in our Python files, but am hoping that since the HTML below is all contained within
+# variables, this is OK. I would have used another way of importing the files from a document,
+# rather than from a Python file, but I don't know how to do this and have concentrated on the course
+# instead of using time to learn extra-curricular things.
+
+
 lesson1 = [
 				['lesson-I-i', 'The Web', """The World Wide Web... what is it really?
 				<br>
@@ -158,7 +165,7 @@ lesson3 = [
 				This is done by making sure that all the <em>invisible</em> boxes in your HTML are divided into &lt;div&gt;s that are assigned specific <b>class</b> names.
 				<br>
 				<br>
-				When I wrote the code for this page, I started by creating all the containers or &lt;div&gt;s for everything for every element on the page, like <span class="specialfont-3">Lesson1</span>, <span class="specialfont-3">Lesson2</span> and <span class="specialfont-3">Lesson3</span>, with different parts, like <span class="specialfont-3">The Web</span>, <span class="specialfont-3">Online Resources</span> or <span class="specialfont-3">CSS</span> nested inside them.
+				When I wrote the initial code for this page, I started by creating all the containers or &lt;div&gt;s for everything for every element on the page, like <span class="specialfont-3">Lesson1</span>, <span class="specialfont-3">Lesson2</span> and <span class="specialfont-3">Lesson3</span>, with different parts, like <span class="specialfont-3">The Web</span>, <span class="specialfont-3">Online Resources</span> or <span class="specialfont-3">CSS</span> nested inside them.
 				<br>
 				I did this without putting any content inside them, other than a little place-holder text.Once I had created the entire HTML structure or tree, I started writing the CSS for the different classes and parts of the page.
 				After this I put my notes and any other content I wanted to add inside the &lt;div&gt;s.
@@ -182,8 +189,1980 @@ lesson3 = [
 				</p>"""]
 				]
 
-#lesson4 = [
-				# ['a', 'b', """c"""],
-				# ['a', 'b', """c"""],
-				# ['a', 'b', """c"""]
-				# ]
+lesson4 = [
+				['lesson-IV-i', 'Computers', """Computers are machines, but unlike many other machines they are versatile or <em>UNIVERSAL</em>.
+			<br>
+			<br>
+			Using the example of a toaster, which is also a machine, we can say that a toaster does pretty much one single thing; It toasts bread. It may do it in a variety of ways, making the bread darker or lighter, more or less crispy, but essentially it is heating and slightly burning the bread. Nothing else.
+			<br>
+			The only way of making a toaster do anything else, would be to hack it's hardware, or re-build it into something else, rendering it rather un-toaster-like.
+			<br>
+			<br>
+			The <em>UNIVERSAL</em> machine, the computer, can basicaly do anything that it is programmed to do. At least anything computational. And as we see through all the many computer programs that most of us use on a daily basis, both for work and recreation, this is quite a lot in very many different ways, from editting video, to playing 3D games, recording and listening to Podcasts and creating the programs that do all of the above.
+			<br>
+			<br>
+			A great thing about computers is the fact that they perform at very high speeds, making possible the multiple, advanced computations needed to perform a variety of taks.
+			<br>
+			All you need to do is tell the computer what to do and in what order and it will do it for you very efficiently."""],
+				['lesson-IV-ii', 'Programming Languages and Interpreting Them', """The way we tell computers what to do, is by writing code in a programming language, which is then interpreted by the computer.
+			<br>
+			<br> 		
+			There are many different programming languages, as I've talked about earlier, concerning HTML and CSS. But <span class="specialfont-2">WHY</span> do we needed invented and constructed languages when we have so many natural languages to choose from?
+			<br>
+			<br>
+			The problem with natural languages is that they are too ambiguous, making them great for poetry, story-telling and just talking, but terrible for telling a computer what to do.
+			<br>
+			A programming language needs to be unambigious and predicitive, so that a programmer can produce reliable and consistent results when using the language.
+			<br>
+			<br>
+			In addition to this, natural languages are too verbos and we would have to use tons of text to describe things that can be described much more efficiently using a language like Python.
+			<br>
+			<br>
+			Languages like Python are interpreted by the computer using an interpreter. The interpreter itself is a program, written in some language and it enables the computer to understand the directions given in the code. So:
+			<br>
+			<br>
+			The computer interprets a code, creating an interpreter, which in turn interprets some other code. this code may do many different things, as mentioned above."""],
+				['lesson-IV-iii', 'Monty Python', """<p class="p-center">
+			<img src="http://i3.kym-cdn.com/photos/images/original/000/671/961/e55.jpg">
+			</p>
+			<br>
+			Guido van Rossum, who created PYTHON, named it after the BBC show Monty Python's Flying Circus because he wanted to give it a name that was <em>"short, unique, and slightly mysterious"</em>.
+			<br>
+			<br>
+			<a href="http://en.wikipedia.org/wiki/Monty_Python">Monty Python</a> is, of course, probably the best comedy ever created, so if for some reason you have not watched any of it before, please start now. Or else the Spanish Inquisition might fetch one of their numerous weapons and use it on you."""],
+				['lesson-IV-iv', 'Python', """Like any other language, Python has grammar and syntax, making it possible for people to read and write it and computers to interpret it. Below are some important, basic concepts about Python.
+			<div class="part-concept">
+				<!-- a part of a concept, for better description of something complex. I won't add these to the top menu, since it might make this too "dense"-->
+				<div class="part-concept-title">
+					<!-- What the class name says:-) -->
+					Some Python Expressions
+				</div>
+				<div class="concept-description">
+					The first basic Python statement we have learnt is <span class="specialfont-3">print</span>, where writing the word print, followed by an expression such as a number or a sum, such as <span class="specialfont-3">2 + 2</span> gives us an output on the screen that is equal to the number or sum we have written.
+					<br>
+					<br>
+					So if I write <span class="specialfont-3">print 2 + 2</span>, I will get an output that says <span class="specialfont-3">4</span>.
+					<br>
+					<br>
+					If I want to output text, for example my name Jens B&auml;ckvall, I need to input the code <span class="specialfont-3">print "Jens B&auml;ckvall"</span>, giving me an output that says <span class="specialfont-3">Jens B&auml;ckvall</span>.
+				</div>
+			</div>
+			<div class="part-concept">
+				<!-- a part of a concept, for better description of something complex. I won't add these to the top menu, since it might make this too "dense"-->
+				<div class="part-concept-title">
+					<!-- What the class name says:-) -->
+					Some Python Grammar
+				</div>
+				<div class="concept-description">
+					Sometimes, when programming or when trying to access a program, you get an error message. This may be a <em>SYNTAX ERROR</em>.
+					<br>
+					Syntax errors come up because... there is an error in the syntax. This can be because the code is incomplete or because it contains syntax not covered by Python, which is therefore not interpretable.
+					<br>
+					<br>
+					Python grammar is very strict, ensuring precision.
+					<br>
+					<br>
+					A Python expression can contain other expressions and operators and can be infinitely long, meaning that expressions can contain other expressions for ever unless all expressions are terminated.
+					<br>
+					<br>
+					<b>Below are the basics for arithmetic expressions:</b>
+					<br>
+					<br>
+					<span class="specialfont-4">An expression</span> can be written as a number.
+					<br>
+					i.e. 0, 1, 2, 3 etc.
+					<br>
+					<br>
+					<span class="specialfont-4">An expression</span> can also be written as an expression, followed by an operator, followed by another expression.
+					<br>
+					i.e. 1 + 2, where the numbers 1 and 2 are expressions and the + is an operator.
+					<br>
+					<br>
+					<span class="specialfont-4">An operator</span> can be +, -, * or /, giving us the possibility of doing basic maths.
+					<br>
+					<br>
+					So we can create long expressions containing many expressions and operators.
+					<br>
+					i.e. <span class="specialfont-3">1 + 5 - 8 * 3</span>, which gives us the output -18.
+				</div></div>"""]
+			]
+
+lesson5 = [
+				['lesson-V-i', 'Variables', """A variable is a name that can be assigned a value. The name of the variable can be anything you want, as long as it is meaningful to you.
+			<br>
+			<div class="part-concept">
+				<!-- a part of a concept, for better description of something complex. I won't add these to the top menu, since it might make this too "dense"-->
+				<div class="part-concept-title">
+					<!-- What the class name says:-) -->
+					Assinging Variables
+				</div>
+				<div class="concept-description">
+					If I want to asign a value to a variable, I simply define the name of the variable and give it an initial value.
+					<br>
+					An example could be the variable <span class="specialfont-4">my_age</span> which can be assigned a value. In my case, I am 38 and I want the variable to have this value, so I will write:
+					<br>
+					<span class="specialfont-4">my_age = 38</span>
+					<br>
+					<br>
+					I now have a varible called <span class="specialfont-4">my_age</span> with the value 38. I can always assign a new value to the variable, giving it a new meaning.
+				</div>
+			</div>
+			<div class="part-concept">
+				<!-- a part of a concept, for better description of something complex. I won't add these to the top menu, since it might make this too "dense"-->
+				<div class="part-concept-title">
+					<!-- What the class name says:-) -->
+					= does NOT mean <em>Equals</em>
+				</div>
+				<div class="concept-description">
+					As you can see in the example I have given above, the equals sign <span class="specialfont-4">=</span> does not have the same function here as it does in mathematics. In maths I could write:
+					<br>
+					<br>
+					5 + 7 = 12
+					<br>
+					<br>
+					or
+					<br>
+					<br>
+					5 = 5
+					<br>
+					<br>
+					where the <span class="specialfont-4">=</span> tells us that two values are the same.
+					<br>
+					<br>
+					In Python, and most other programming languages (probably all, but I'm not sure), the <span class="specialfont-4">=</span> acts as a pointer or arrow telling the interpreter to let the variable my_age point to the value 38 so that this value can be used whenever my_age is invoked.
+				</div>
+			</div>
+			<div class="part-concept">
+				<!-- a part of a concept, for better description of something complex. I won't add these to the top menu, since it might make this too "dense"-->
+				<div class="part-concept-title">
+					<!-- What the class name says:-) -->
+					Using Variables
+				</div>
+				<div class="concept-description">
+					Variables are very useful in many ways and we have already used variables earlier in this course, when coding CSS. All the properties we have given our HTML through CSS are variables.
+					<br>
+					<br>
+					Basically variables are so useful because they let us do things like:
+					<br>
+					<ul>
+						<li>
+							Letting us assign names that make sense to the programmer or the user, making the code easier to understand, use and change.
+						</li>
+						<li>
+							Making it possible for us to change the value of data over time, something which can be very important to the functioning of some programs.
+						</li>
+						<li>
+							Acting as a storage for data that can be quickly and easily changed in one place that may make an impact in many different places.
+						</li>
+					</ul>
+					
+
+				</div>
+			</div>"""],
+				['lesson-V-ii', 'Strings', """Strings are defined as a series of letters and or numbers surrounded by single <span class="specialfont-4">'</span> or double <span class="specialfont-4">"</span> quotation marks.
+			<br>
+			<br>
+			So if I want to print a sentence on the screen, I should write the following:
+			<br>
+			<span class="specialfont-3">print "I just love coding Python."</span>
+			<br>
+			<br>
+			which will output as:
+			<br>
+			<br>
+			I just love coding Python."""],
+				['lesson-V-iii', 'Indexing Strings', """I can index the characters in a string using the square brackets <span class="specialfont-4">[</span> and <span class="specialfont-4">]</span> in the following way:
+			<br>
+			<br>
+			<span class="specialfont-4">print "text"[2]</span>
+			<br>
+			<br>
+			In the above example, I am asking the interpreter to output the character in position 2 of the string "text".
+			<br>
+			When indexing in this way, it is important to remember that the first character has position 0, the second character has position 1 etc. So in the example I just gave, the output will be <span class="specialfont-4">x</span>, as this letter is the third character, which is in position 2.
+			<br>
+			<br>
+			It is also possible to output a sub-string by indexing all letters between two positions in the following way:
+			<br>
+			<br>
+			<span class="specialfont-4">print "text"[1:3]</span>
+			<br>
+			<br>
+			This example outputs <span class="specialfont-4">ex</span>, because it starts at position 1 and ends with the letter before position 3.
+			<br>
+			<br>
+			Finally, it is also possible to index from the end of a string, where the last character has position -1, the second last character has position -2 etc."""],
+				['lesson-V-iiii', 'Using .find', """Using the .find function is almost like an inverted version of the indexing described above, but instead of searching for the characters at certain positions in a string, it finds certain characters in a string and returns their position. Something that I guess could be very useful in building a simple text search tool for a word processing program or even in more advanced search engines.
+			<br>
+			.find works in the following way:
+			<br>
+			<br>
+			<span class="specialfont-4">print "text".find("xt")</span>
+			<br>
+			<br>
+			In the example, we are searching for <span class="specialfont-4">xt</span> in the string <span class="specialfont-4">text</span>.
+			The interpreter returns the value <span class="specialfont-4">2</span> as this is the position where we find the sequence of letters we are looking for.
+			<br>
+			<br>
+			In addition, we can also add an extra parameter when using .find, allowing us to decide where in the string our search starts. This is the way it looks:
+			<br>
+			<br>
+			<span class="specialfont-4">print "This text is a text".find("xt", 8)</span>
+			<br>
+			<br>
+			The example returns the value <span class="specialfont-4">17</span> because we started our search at position 8, thus skipping the first occurence of <span class="specialfont-4">xt</span>."""]
+			]
+
+lesson6 = [
+				['lesson-VI-i', 'What is a Function?', """A function (also called a procedure by some) is a piece of code that takes input, uses that input for something and during the course of this something, produces an output.
+			<br>
+			An example could be a function that performs a mathematical task, such as adding two numbers together and then dividing the result with a third number. We would then be able to use the function as a calculator for any given values of the three numbers."""],
+				['lesson-VI-ii', 'Creating a Function vs. Using a Function', """<div class="part-concept-title">
+					Creating a function
+				</div>
+				<div class="concept-description">
+					If we want to create a function, we start by defining it using <span class="specialfont-4">def</span>. After this, we need to give it a <span class="specialfont-4">name</span> followed by parantheses that can contain  <span class="specialfont-4">parameters</span>. The parameters are variables that can be assigned values when we use the function.
+					<br>
+					N.B. a function does not necessarily have to have any input parameters, if none are needed for whatever it is that you want the function to do.
+					<br>
+					After the closing parantheses we add a colon<span class="specialfont-4">:</span>.
+					<br>
+					<br>
+					Inside the function, we write the code that tells the function what to do.
+					<br>
+					Finally, we use <span class="specialfont-4">return</span> to get a result out of the function. It could look like this:
+					<br>
+					<br>
+					<span class="specialfont-4">
+						def maths(a, b, c):
+						<br>&nbsp;&nbsp;&nbsp;&nbsp;
+						result = (a + b) / c
+						<br>&nbsp;&nbsp;&nbsp;&nbsp;
+						return result
+					</span>
+					<br>
+					<br>
+					We now have a functioning function and just need to know how to use it.
+				</div>
+			</div>
+			<div class="part-concept">
+				<div class="part-concept-title">
+					Using the function
+				</div>
+				<div class="concept-description">
+					When using this function, we need to input some values for our parameters. In the example I have written, we have three, so we need to choose three numbers. Let's say 1, 2 and 3.
+					<br>
+					<br>
+					We then simply use the <span class="specialfot-4">print</span> statement, asking it to output the result of our function using our chosen parameters, like this:
+					<br>
+					<br>
+					<span class="specialfont-4">
+						print maths(1, 2, 3)
+					</span>
+					<br>
+					<br>
+					This gives us the output <span class="specialfont-4">1</span> on the screen, which is of course the answer when adding 1 and 2 and then dividing the result by 3.
+					<br>
+					<br>
+					Using a function is refered to as <span class="specialfont-2">calling</span> it.
+				</div>"""],
+				['lesson-VI-iii', 'The Important RETURN Statement', """It is important to use <span class="specialfont-4">return</span>, as mentioned above, since this is the only way we can get something out of our function. So don't forget it! The reason for this is that return tells Python to output whatever it is we are asking it to return.
+			<br>
+			if you do forget the return statement, the only output you will see is:
+			<br>
+			<br>
+			 <span class="specialfont-4">None</span> """],
+				['lesson-VI-iv', 'Using PRINT to debug', """You can always use <span class="specialfont-4">print</span> in your code, if you want to see what is going on.
+			<br>
+			<br>
+			 If, for example, you have a variable that is supposed to change over time, but your code does not seem to give you the expected result or doesn't give any result, adding <span class="specialfont-4">print</span> statements to your code, to let you see what has happend to your variable along the way could be helpful.
+			 <br>
+			 It could help you see exactly where things have gone wrong in your code, so that you know where to fix it.
+			 <br>
+			 <br>
+			 <span class="specialfont-2">BUT REMEMBER</span> to remove your print statements from the code once you've fixed your bugs!"""],
+				['lesson-VI-v', 'Functions for Less Repetition', """Functions are a great tool for less repetition in coding, since you can let the function output something using a set of variables and then let it produce a similar thing with other content-strings, integers etc, using other <em>values</em> for your variables.
+			<br>
+			<br>
+			And once you've defined your function and have seen that it works, you can let it do the same work again and again without ever having to re-define it."""]
+			]
+
+lesson7 = [
+				['lesson-VII-i', 'Comparison operators', """To be able to use <span class = "specialfont-2">if, else, while, for</span> and lots of other statements in our code, we have to understand how to use comparison operators like &lt;, &gt;, ==, !=, &lt;=, &gt;=. These return a Boolean value, being either <span class = "specialfont-2">True</span> or <span class = "specialfont-2">False</span>:
+			<br>
+			<br>
+			4 &lt; 5, four is smaller than five, which is True
+			<br>
+			4 &gt; 5, four is larger than, which it isn't so this would turn out False
+			<br>
+			4 == 5, four is equal to five, which it isn't either. False
+			<br>
+			4 != 5, four is not equal to five. True
+			<br>
+			4 &lt;= 5, four is smaller than or equal to five... True
+			<br>
+			4 &gt;= 5, four is larger than or equal to five... False
+			<br>
+			<br>
+			I found a nice list of Python operators here: <a href="http://www.tutorialspoint.com/python/python_basic_operators.htm">tutorialspoint</a>.
+			<br>
+			<br>
+			A single equal sign <span class = "specialfont-4">=</span>, is not a comparison operator, as it is used to assign values in the way I have mentioned in earlier notes."""],
+				['lesson-VII-ii', 'Boolean Values and Control Flow', """The Boolean binary values of <span class = "specialfont-2">True</span> or <span class = "specialfont-2">False</span> are important when controlling the order in which different parts of a code are executed, called and/or evaluated. This is known as Control Flow.
+			<br>
+			<br>
+			<p class = "p-center">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/George_Boole_color.jpg/220px-George_Boole_color.jpg">
+			</p>
+			<br>
+			Thank you George Boole! 
+			<br>
+			And here are two Wikipedia links for more in-depth reading:
+			<br>
+			<br>
+			<a href="https://en.wikipedia.org/wiki/Boolean_data_type">Boolean Data Types</a>
+			<br>
+			<br>
+			<a href="https://en.wikipedia.org/wiki/Control_flow">Control Flow</a>"""],
+				['lesson-VII-iii', 'if and else statements', """The <span class = "specialfont-2">if</span> statement is a statement that sets up a parameter that has to be met for it to run the code below it. It can be used together with an <span class = "specialfont-2">else</span> statement, giving us the possibility of having alternative code that will run when the if statement's parameters are not met.
+			<br>
+			Example:
+			<br>
+			<br>
+			<span class = "specialfont-4">def</span> negative_number_check(x):
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class = "specialfont-4">if</span> x &lt; 0:
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 'it's negative'
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class = "specialfont-4">else</span>:
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 'it's positive'
+			<br>
+			<br>
+			print negative_number_check(-8)
+			<br>
+			<br>
+			<br>
+			The above procedure prints <span class = "specialfont-3">it's negative</span>, since -8 is less than 0.
+			<br>
+			<br>
+			You can have several if statements following each other or nested inside each other, if this is needed to check several different parameters."""],
+				['lesson-VII-iv', 'or', """You can use <span class = "specialfont-2">or</span> to compare to compare two or more statements, where the code simply evaluates whether the given statement is True or False. In a version of <a href="https://www.udacity.com/course/viewer#!/c-nd000/l-4196788670/m-48667862">Dave's Example</a>, I could write:
+			<br>
+			<br>
+			<span class = "specialfont-4">def</span> is_friend(name):
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;return name[0] == 'D' or name[0] == 'F' or name[0] == 'G'
+			<br>
+			<br>
+			<span class = "specialfont-4">print</span> is_friend('Daniel') this gives us True
+			<br>
+			<span class = "specialfont-4">print</span> is_friend('Frederik') this gives us True
+			<br>
+			<span class = "specialfont-4">print</span> is_friend('Gustaf') this gives us True
+			<br>
+			<span class = "specialfont-4">print</span> is_friend('Peter') this gives us False
+			<br>
+			<br>
+			The code checks if the name that has been used as input, starts with a D or an F or a G."""],
+				['lesson-VII-v', 'while loops', """A loop that keeps repeating itself until something is fulfilled. It is important to use some kind of counter in <span class = "specialfont-2">while</span> loops, so that you can keep track of the iterations and make sure that the loop stops once it has found or accomplished whatever it is you're looking for it to find or accomplish. For example:
+			<br>
+			<br>
+			counter = 0
+			<br>
+			<span class = "specialfont-4">while</span> counter &lt; 11:
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class = "specialfont-4">print</span> counter
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;counter = counter + 1
+			<br>
+			<br>
+			The above loop will print the numbers from 0 to 10, stopping when the the counter reaches a value of 11, which obviously is not smaller than 11 :-)
+			<br>
+			<br>
+			IMORTANT!: The while statement is spelt with a lower case <span class = "specialfont-4">w</span>. When written with a capital <span class = "specialfont-4">W</span>, you will get a syntax error.
+			<br>
+			<div class="part-concept">
+				<div class="part-concept-title">
+					break test
+				</div>
+				<div class="concept-description">
+					while loops can be stopped by using a break expression. This works by testing a parameter through an if statement, and if this statement is True, it jumps out of the while loop, cancelling further iterations after the one that caused the if statement to become True.
+					<br>
+					Example:
+					<br>
+					<br>
+					counter = 0
+					<br>
+					<span class = "specialfont-4">while</span> counter &lt; 11:
+					<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class = "specialfont-4">print</span> counter
+					<br>
+					<span class = "specialfont-4">&nbsp;&nbsp;&nbsp;&nbsp;if</span> counter == 9:
+					<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break
+					<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;counter = counter + 1
+					<br>
+					<br>
+					The above code would do the same as letting the while loop only go up to x &lt; 10, so it is a pretty dumb use of the break, but it gives the general picture of what it does.
+					<br>
+				</div>
+			</div>"""]
+			]
+
+lesson8 = [
+				['lesson-VIII-i', 'More Debugging Advice', """Python returns error-messages, called Tracebacks. An example from the lesson is:
+			<br>
+			<br>
+			<span class = "specialfont-2">TypeError: unsupported operand type(s) for +: 'int' and 'str'</span>
+			<br>
+			<br>
+			A good start, when dealing with an error message that you don't understand, is to copy-paste it into a search engine, to see if others have had the same problem and how this can help you understand and correct the error. When looking up the error-message above, I found out that I had to change an integer into a string, by adding str(). 
+			<br>
+			<br>
+			Below are some other debugging tips.
+			<br>
+			<br>
+			<div class="part-concept">
+				<div class="part-concept-title">
+					Copied code
+				</div>
+				<div class="concept-description">
+					If you have copied code from somewhere, make sure that the code you have copied, does what you want it to do and make sure that you understand it, so that the original code, or your re-working of it, does not contain errors.
+				</div>
+			</div>
+			<div class="part-concept">
+				<div class="part-concept-title">
+					Using <span class = "specialfont-4">print</span>
+				</div>
+				<div class="concept-description">
+					As I have mentioned earlier, using the print statement is a good way of understanding code and finding out where what has gone wrong.
+				</div>
+			</div>
+			<div class="part-concept">			
+				<div class="part-concept-title">
+					Editing out or Saving
+				</div>
+				<div class="concept-description">
+					If you have coded something that does not work, don't just throw it out by deleting it. Try editing it out by using a hashtag <span class = "specialfont-4">#</span> in front of it. This way, you can compare the code that didn't work with the code you write afterwards. Maybe you can use some of the old code, or maybe you can learn something for future coding.
+					<br>
+					<br>
+					You may also want to save old code in a separate file, if editing it out takes up too much space, or you just don't want to do it that way.
+				</div>
+			</div>
+			<br>"""]
+			]
+
+lesson9 = [
+				['lesson-IX-i', 'Strings and Lists: structuring data', """The difference between defining a string and a list, is that a string is a sequence of characters and a list is a sequence of anything.
+			<br>
+			You can index both strings and lists in similar fashions.
+			<br>
+			Examples:
+			<br>
+			<br>
+			s = 'Hello!World'
+			<br>
+			<br>
+			p = ['H', 'e', 'l', 'l', 'o', '!']
+			<br>
+			<br>
+			indexing either the string s or the list p will give the same result at the same positions.
+			<br>
+			Examples:
+			<br>
+			<br>
+			s[4] gives us the letter o and so does p[4].
+			<br>
+			<br>
+			A cool thing about lists is that they can contain <b>both</b> strings and numbers and can even contain other lists, like:
+			<br>
+			<br>
+			H2G2 = ['The answer to the great question', 42, 'Adams', ['Earth', 'Earth mach 2', 'Slartibartfast']]
+			<br>
+			<br>
+			A list contained inside another list is referred to as a nested list.
+			<br>
+			When creating large lists, you should be aware of where you break the list (this should be after a comma). It is also a good idea to create indentation, so that the entire list is indented equally.
+			<br>
+			<br>
+			Lists nested inside other lists can be indexed by using double brackets, like:
+			<br>
+			<br>
+			H2G2[3][2], which will return the name Slartibartfast"""],
+				['lesson-IX-ii', 'Mutating and Aliasing', """Strings are immutable, meaning that you can't change them directly.
+			<br>
+			Lists are mutable, meaning that we can reassign new values to elements in the list. This is important, as we have to be aware of what variables point to, and how they may change, the same list.
+			<br>
+			<br>
+			When re-assigning a variable containing a string, the variable is simply pointed toward a new value as in the example below.
+			<br>
+			<br>
+			Initial value:
+			<br>
+			s = 'Hello'
+			<br>
+			re-assigning:
+			<br>
+			s = 'Yello'
+			<br>
+			<br>
+			s now points to the value 'Yello'  but it has not mutated.
+			<br>
+			<br>
+			If we do the same with a list, we can do the following;
+			<br>
+			<br>
+			Initial value:
+			<br>
+			p = ['H', 'e', 'l', 'l', 'o']
+			<br>
+			re-assigning:
+			<br>
+			p[0] = 'Y'
+			<br>
+			<br>
+			then we let a new variable point to p. We call it q.
+			<br>
+			<br>
+			q = p
+			<br>
+			<br>
+			q and p are now linked and when we change a value in q.
+			<br>
+			<br>
+			q[0] = 'T'
+			<br>
+			<br>
+			the same value is changed in p, so now both lists, when printed, look like this:
+			<br>
+			<br>
+			['T', 'e', 'l', 'l', 'o']
+			<br>
+			<br>
+			This is referred to as aliasing. So two or more aliased lists always change together when one is changed."""],
+				['lesson-IX-iii', 'List Operations', """Here are three different list operations that are useful to know.
+			<br>
+			<div class="part-concept">		
+				<div class="part-concept-title">
+					append
+				</div>
+				<div class="concept-description">
+					This mutates the list by adding a new object to a list. Example;
+					<br>
+					<br>
+					<u>We have a list called p, containing the numbers from 0 to 3 like this:</u>
+					<br>
+					<br>
+					p = [0, 1, 2, 3]
+					<br>
+					<br>
+					<u>We then use append to add 4 to the list like this:</u>
+					<br>
+					<br>
+					p.append(4)
+					<br>
+					<br>
+					<u>If we print p now, it looks like this:</u>
+					<br>
+					<br>
+					[0, 1, 2, 3, 4]
+				</div>
+			</div>
+			<div class="part-concept">	
+				<div class="part-concept-title">
+					+
+				</div>
+				<div class="concept-description">
+					<u>This concatenates two lists (without mutation) in the following way:</u>
+					<br>
+					<br>
+					[0, 1] + [2, 3]
+					<br>
+					<br>
+					These two lists have now been used to create a new list which looks like [0, 1, 2, 3]. As mentioned, the original lists have not mutated while producing the new list.
+					<br>
+					<br>
+					<u>We can also use the assignment syntax += which works just like append, in that it adds to a list. For example:</u>
+					<br>
+					<br>
+					mylist = [1, 2, 3, 4]
+					<br>
+					mylist += [5, 6]
+					<br>
+					<br>
+					After the above, mylist now has the value [1, 2, 3, 4, 5, 6]
+				</div>
+			</div>
+			<div class="part-concept">
+				<div class="part-concept-title">
+					len
+				</div>
+				<div class="concept-description">
+					<u>Counting a list with len:</u>
+					<br>
+					<br>
+					len([0, 1]) gives us 2, as there are two objects in the list.
+					<br>
+					<br>
+					<u>Counting a list with nested lists counts the objects in the outermost list:</u>
+					<br>
+					<br>
+					len(0, 1, [2, 3]) gives us 3, as there are three objects in the outermost list.
+					<br>
+					<br>
+					<u>When using len on a string, it counts the characters in the string, like this:</u>
+					<br>
+					<br>
+					len('four') gives us 4, as there are four characters in the word.
+					<br>
+					<br>
+					<br>
+					Important! Len applies two other things than just lists. Anything(I think) that contains a number of values/integers/strings/objects can be counted with len.
+				</div>
+			</div>"""],
+				['lesson-IX-iv', 'for loops', """A loop that, unlike a while loop, does not need a counter. If I want to print the numbers in a list p, I'd do it the following way(first defining the list):
+			<br>
+			<br>
+			p = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+			<br>
+			<span class = "specialfont-4">for</span> element <span class = "specialfont-4">in</span> p:
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class = "specialfont-4">print</span> element
+			<br>
+			<br>
+			The above loop looks in the list p and prints the first element, whereupon it moves forward to the next element, stopping it's iterations when it has gone through the whole list. Pretty smart and very good for avoiding infinite loops, which can cause problems in your code.
+			<br>
+			<br>
+			Advice: Always use a for loop, if you can. Only use while loops if you have to and make sure that you create a statement that ends the while loop when you need it to end.
+			<br>
+			<div class="part-concept">		
+				<div class="part-concept-title">
+					range(x)
+				</div>
+				<div class="concept-description">
+					When using for loops, the operation <span class = "specialfont-4">range</span> is a great tool for choosing the number of your iterations. It works by giving it a number, whereupon it goes from 0 (zero) up until, but not including, the number. Example:
+					<br>
+					<br>
+					range(25) will give us 25 counts from 0 to 24.
+					<br>
+					<br>
+					<u>So a for loop could be:</u>
+					<br>
+					<br>
+					<span class = "specialfont-4">for</span> element <span class = "specialfont-4">in</span> range(25):
+					<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;print 'number' + str(element)
+				</div>
+			</div>"""],
+				['lesson-IX-v', 'Indexing', """<br>
+			<div class="part-concept">		
+				<div class="part-concept-title">
+					indexing with <span class = "specialfont-4">.index</span>
+				</div>
+				<div class="concept-description">
+					&lt;list&gt;<span class = "specialfont-4">.index</span>
+					<br>
+					<br>
+					if &lt;value&gt; is found in the &lt;list&gt;, the position of the first occurrence is returned. If it is not, an error is produced.
+				</div>
+			</div>
+			<div class="part-concept">		
+				<div class="part-concept-title">
+					indexing with <span class = "specialfont-4">in</span>
+				</div>
+				<div class="concept-description">
+					written in the following way:
+					<br>
+					<br>
+					&lt;value&gt; <span class = "specialfont-4">in</span> &lt;list&gt;
+					<br>
+					<br>
+					This procedure checks if &lt;value&gt; occurs in the &lt;list&gt;. If it does, we get the output True. If not, we get the output False.
+					<br>
+					<br>
+					We can also use <span class = "specialfont-4">not in</span>, like this:
+					<br>
+					<br>
+					&lt;value&gt; <span class = "specialfont-4">not in</span> &lt;list&gt;
+					<br>
+					<br>
+					Similarily, it produces either False or True, depending on whether the &lt;value&gt; does not occur in the &lt;list&gt;.
+				</div>
+			</div>"""]
+			]
+
+lesson10 = [
+				['lesson-X-i', 'Some Notes on Problem-Solving', """<div class="part-concept">
+				<div class="part-concept-title">
+					Dave's short 101:
+				</div>
+				<div class="concept-description">
+					<ol type = "0">
+						<li><span class = "big_friendly_letters">DON'T PANIC</span></li>
+						<li>What are your inputs?</li>
+						<li>What are your desired outputs?</li>
+						<li>Try some examples by hand.</li>
+						<li>Can you think of a simple, mechanical solution?</li>
+						<li>Develop your solution step, by step, testing as you go.</li>
+					</ol>
+				</div>
+			</div>
+			And here is my own, not as short, add-on, to go after the 101 above:
+			<br>
+			<ol type = "0">
+				<li>Find relationship between possible inputs and desirable outputs.</li>
+				<li>What are the possible inputs?... understand them. What are the desired outputs or types of output?</li>
+				<li>Defensive programming: Thinking about possible mistakes that can be made in inputs and write code to check for these.</li>
+				<li>Understand the outputs.</li>
+				<li>Try some examples to make sure that you really understand what a set of inputs should output.</li>
+				<li>Consider how you would solve the problem, as a human. If you don't know how to solve it through systematic thinking, you probably can't solve it through coding.</li>
+				<li>Try writing <i>pseudo-code</i> to see what you have to code.</li>
+				<li>After creating your <i>pseudo-code</i>, think about if there might be more simple, mechanical ways of solving the problem.</li>
+				<li>It is important to be able to write small bits of code and understand what they do to be able to make problem-solving progress.</li>
+				<li>ALWAYS CHECK YOUR INDENTATIONS!!!!!!!!! I write this with capitals, because I have failed at least two example problems due to creating faulty indentation.</li>
+			</ol>"""]
+			]
+
+lesson11 = [
+				['lesson-XI-i', 'Abstraction, a short introduction', """Abstraction can be described as a way of collecting lots of basic information or instructions into groups, where these instructions combine to become something more or other than the instructions themselves.
+			If I say the word house, you know what kind of structure I am probably referring to, and I don't need to describe every aspect of the house. So instead of describing the foundation, the bricks, the boards, the windows, the doors etc, I just have to say house.
+			<br>
+			<br>
+			When we talk about abstraction in a programming language like Python, we talk about the built in functions that can be used, although we don't actually have to (exactly) know or control how they work. We just use them and control how they are used, enabling us to do more things in less time, thanks to the pre-programmed functions. These functions are a part of Python, through the Python Standard Library. This video from the course explains the basics in a nice and easy-to-understand manner:
+			<br>
+			<br>
+			<p align = "center">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/5TGY5p07g6M" frameborder="0" allowfullscreen></iframe>
+			</p>
+			<br>
+			<br>
+			For example:
+			If I want to draw a shape with Python's built-in <span class = "specialfont-2">turtle</span>, I only have to tell the turtle where to go, without having to know what the turtle tells the computer to enable it to draw pixels on the screen.
+			<br>"""],
+				['lesson-XI-ii', 'DRY', """<p class="p-center">
+			<img width="750" height="450" src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Drought.jpg">
+			</p>
+			<br>
+			Why is the land so barren and dry? Maybe because all of the resources were over-used through unnecessary repetition... so...
+			<br>
+			<br>
+			<p class="p-center">
+			<span class = "specialfont-1">D</span>on't <span class = "specialfont-1">R</span>epeat <span class = "specialfont-1">Y</span>ourself!!!
+			</p>
+			<br>
+			Avoiding repetition is very important for a number of reasons. Some of them being; readability, bug-checking, use of memory etc.
+			<br>
+			<br>
+			As in most coding, repetition is a bad thing as it can lead to all sorts of problems (see above ;-) ).
+			The use of classes and objects and the way that Object-Oriented Programming(OOP) let's the code use and re-use itself and other related bits of code in different modules is a great way to avoid doing things again and again.
+			<br>
+			<br>
+			This also makes OOP a fantastic tool for programming on a large scale, as we can re-use our own code, as well as accessing code made by other's, including that available in the Python Standard Library and in add-ons like the Twilio API(Application Programming Interface).
+			<br>
+			Thanks to this, we can do big things, without having to create miles of code from scratch."""],
+				['lesson-XI-iii', 'OOP, A Short Introduction', """<div class="part-concept">	
+				<div class="part-concept-title">
+					OOP - A Definition
+				</div>
+				<div class="concept-description">
+					Object-Oriented Programming (OOP) is a programming paradigm where the focus is on <span class = "specialfont-3">objects</span> and <span class = "specialfont-3">data</span>.
+					<br>
+					<br>
+					This is in contrast to programming where the focus is on <span class = "specialfont-3">logical procedures</span> that take <span class = "specialfont-3">input data</span> and performs some action with it, to produce <span class = "specialfont-3">output data</span>.
+					<br>
+					<br>
+					So in OOP, we don't start by defining logical procedures to handle our data, <b>we start by defining our data</b>. Once we know what data we want to manipulate and how we want to manipulate it, we also have to know how the different types of data relate to each other.
+					<br>
+					<br>
+					This is where we create our <span class = "specialfont-3">objects</span>. Each object is structure containing data (attributes) and <span class = "specialfont-3">methods</span> that can use and manipulate the data.
+					<br>
+					Similar objects are refered to as <span class = "specialfont-3">instances</span> of a <span class = "specialfont-3">class</span>. A class definition can be re-used indefinitely to create as many instances as we want to.
+					<br>
+					<br>
+					Once we have defined and created our objects and the logical methods they contain, these objects can call, use and even modify each other.
+					<br>
+					<br>
+					So, OOP can be loosely defined as a series of objects(data containers) that use each other to create the large complex structure that is the program.
+					<br>
+					<br>
+					Here are two links for more reading on OOP:
+					<br>
+					<a href="https://en.wikipedia.org/wiki/Object-oriented_programming">Wikipedia</a>
+					<br>
+					<a href="http://searchsoa.techtarget.com/definition/object-oriented-programming">Techtarget</a>
+				</div>
+			</div>
+			<br>
+			Why is OOP a good tool for efficient programing?
+			<br>
+			In Object-Oriented Programming, we work with classes and objects. These classes and objects contain data that can be used by other classes and objects that call each other, thus enabling us to store information in one class that can be used by many classes and objects. This makes the code shorter(because of less repetition), helps us avoid making the same mistakes in multiple places and makes it easier for us to update the code, without having to make too many changes in many different places.
+			<br>
+			<br>
+			We can talk about classes as being basic blueprints that can be used over and over again. We use the blueprints to create other classes and objects that have all or some of the same properties. Just like I wrote  above in <a href="#lesson-VI-v">Functions for Less Repetition</a>.
+			<br>
+			<br>
+			<div class = "part-concept">
+				<div class="part-concept-title">
+					Reasons why OOP is good for large programming projects
+				</div>
+				<div class = "concept-description">
+					When coding large, complicated programs, the programmers will be defining and re-defining enormous amounts of variables and functions.
+					<br>
+					These variables and functions will be used and modified by each other and when the code is updated, they might even be modified by programmers.
+					<br>
+					<br>
+					Imagine if 2, 5, 10 or even more coders are working on this program, where the variables and functions are not split into separate modules, objects and instances. They all have to make sure that they know what every single variable and function (and there may be thousands or tens of thousand) does and what they can control, call and modify.
+					<br>
+					This is probably <b>impossible</b> for all but an almost non-existent sub-set of the human species, which leads us towards almost certain bugs that are very, very difficult to find.
+					<br>
+					<br>
+					But <span class = "big_friendly_letters">DON'T PANIC</span>, OOP is here.
+					<br>
+					Using OOP, the many variables and functions are contained inside objects and classes, some of which can't even call each other, if they are not supposed to. These objects can (and should) have names that make it easy for anyone to see what they are doing, so that altering the code becomes less difficult for anyone knowing the language.
+					<br>
+					Using OOP, everything is not one big file with over 100000 lines of code, but is split into many smaller objects that are easily manageable. These objects are easier to control, making it easy to avoid bugs and easier to find them if, and when, they do pop up.
+					<br>
+					<br>
+					Another (but in a way it is more of what I mentioned above) great thing about OOP, when it comes to large projects, is the way you can use <i>abstraction layers</i>, both through built-in modules or new modules that you create yourself.
+					<br>
+					This let's you define certain functionality and then lock this functionality into it's own little <i>box</i> that is simply called when it is needed. If somehting goes wrong or has to be changed, you open the <i>box</i>, make your changes and close it again.
+					<br>
+					You are basically hiding all but the most necessary information about the object in the box, making it easier to use and easier for other programmers to understand, use and potentially modify.
+				</div>
+			</div>
+			<br>
+			So, in OOP we define classes that control multiple instances in the code, just like earlier on in the course where we used <a href="#lesson-III-i">CSS</a> to create classes that control many different aspects of our HTML, in many different places. 
+			<br>
+			<br>
+			As a matter of fact, CSS has even more in common with OOP, as many of the traits defined for an element in CSS, will be inherited by children of this element, much in the same way that classes in Python inherit from their parent-classes. So if you have a div that has been assigned a specific font and text-alignment, any div inside this first div will inherit the font and alignment, without this being assigned in that div.
+			<br>
+			But not all traits are automatically inherited by the child element, if this is not explicitly done in the code. Border and padding properties are not, but there are options for making this happen.
+			Here is an interesting, albeit quite old, post about this: <a href="http://webdesignfromscratch.com/html-css/css-inheritance-cascade/">webdesignfromscratch</a>.
+			<br>"""]
+			]
+
+lesson12 = [
+				['lesson-XII-i', 'Importing Modules and Functions', """Python has many built in <span class = "specialfont-2">modules</span> that can be used to perform a variety of tasks/functions.
+			<br>
+			Things like <span class = "specialfont-2">turtle</span>, <span class = "specialfont-2">time</span>, <span class = "specialfont-2">webbrowser</span> and many others. The modules contain functions that we can use in many different ways, as described above in the introduction to abstraction.
+			<br>
+			To use one or more of these functions, we need to import the relevant module(s) into our program, by using the import statement, like this:
+			<br>
+			<br>
+			<span class = "specialfont-4">import</span> turtle
+			<br>
+			<br>
+			turtle has now been imported into the program and can be used.
+			<br>
+			<br>
+			As mentioned earlier, we can also install and import code from outside the Python Standard Library, like the Twilio API.
+			<br>"""],
+				['lesson-XII-ii', 'Reading About Functions', """To find out more about built in functions, read about the ones you want to use or maybe find new ones that do something you need, you can look them up in the <a href="https://docs.python.org/2/library/">Python Standard Library(PSL)</a>.
+			<br>
+			<br>
+			But remember that finding a certain functionality is probably easier through searching directly in a search engine. That way you'll be able to find the relevant modules and functions, and see examples of how they are used. Then you can go to the PSL to get more in-depth knowledge of the things you are using.
+			<br>
+			<br>
+			Here's a direct link to the turtle module  in the PSL: <a href="https://docs.python.org/2/library/turtle.html">turtle module</a>.
+			<br>"""]
+			]
+
+lesson13 = [
+				['lesson-XIII-i', 'Calling and Using a Class', """Once we have imported the module turtle, we can use it to call a class, and in doing this we are in fact initiating a function. There are many classes within turtle, like <span class = "specialfont-2">Turtle</span>, <span class = "specialfont-2">Screen</span> etc.
+			<br>
+			<br>
+			This function is defined inside the class Turtle, and is called __init__(). The __init__() function is referred to as a constructor. 
+			<br>
+			<div class="part-concept">	
+				<div class="part-concept-title">
+					Note on constructor/initiator
+				</div>
+				<div class="concept-description">
+					It has to be noted that many online resources say that it is not a true constructor, but only functions as such. These resources and people often call __init__() an initiator, saying that the construction occurs when the class is defined.
+					<br>
+					<br>
+					Here is a link to a StackOverflow question about this: <a href = "http://stackoverflow.com/questions/6578487/init-as-a-constructor">__init__ as a constructor?</a> 
+				</div>
+			</div>
+			<br>
+			The __init__() function creates space in our computer's working memory for instances of the class Turtle. In the example below, we are defining brad and britt, which are both instances of the class Turtle:
+			<br>
+			<br>
+			brad = turtle.Turtle
+			<br>
+			britt = turtle.Turtle
+			<br>
+			<br>
+			So the class, Turtle, is like a basic blueprint within the module turtle that can be used to create multiple instances of the class.
+			<div class="part-concept">	
+				<div class="part-concept-title">
+					Note on capitalization of classes
+				</div>
+				<div class="concept-description">
+					An important thing to remember when using turtle is that the classes Turtle (turtle.Turtle) or Screen (turtle.Screen) must be capitalized. If you write turtle.screen, with a non-capital s, it will produce the following error:
+					<br>
+					<br>
+					<span class = "specialfont-3">AttributeError: 'module' object has no attribute 'screen'</span>
+				</div>
+			</div>"""],
+				['lesson-XIII-ii', 'Creating Classes', """Why create a class?
+			<br>
+			Although many things are defined within the PSL, specifics aspects of a program that you want to create will not be covered and you have to create classes for yourself.
+			Maybe you want to be able to call, see or in other ways use many different objects that are all of the same type. Like in the movie example, where we all know what a movie is and that many different movies exist. 
+			<br>
+			<br>
+			So what should you think about when creating a class?
+			<br>
+			What aspects of the class are things that all instances of the class have in common, and which of these would it be useful to be aware of, so that we can use them when creating instances of the class?
+			<br>
+			Again, if we take the movie example, all movies(as far as I know) have a title, a storyline, a trailer, a poster etc. All of these are things that we may want to use for every instance of the class movie, but we don't want to waste time, space and common sense by re-creating all the aspects of a movie every time we define a new movie.
+			<br>
+			<br>
+			Creating the class
+			<br>
+			When creating the class, we use the Python keyword <span class = "specialfont-4">class</span>, like this:
+			<br>
+			<br>
+			<span class = "specialfont-4">class</span> Name_of_class():
+			<br>
+			<br>
+			This is followed by <b>def __init__()</b>, also known as the <i>constructor</i>, although not everyone agrees upon this(see above).
+			<br>
+			<br>
+			__init__() uses some terms, i.e. __init__(self, a, b, c, etc). More specifically:
+			<br>
+			<br>
+			self: this is for the object being created, so it points to the instance being created. In the movie example, this instance could be <i>The Matrix</i>, <i>Stranger Than Fiction</i> or any other movie that we choose to create an instance for.
+			<br>
+			<br>
+			a, b, c, etc:  are <i>instance variables</i> needed for the specific class we are creating. In the movie example we have title, storyline etc. These should have corresponding names, such as movie_title, movie_storyline, movie_poster etc, rather than having ambiguous names like a, b and c.
+			<br>
+			<br>
+			So if we want to create the class Movie, and want to let it have the three instance variables above, we do it like this:
+			<br>
+			<br>
+			class Movie():
+			&nbsp;&nbsp;&nbsp;&nbsp;def __init__(self, movie_title, movie_storyline, movie_poster):
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.title = movie_title
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.storyline = movie_storyline
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.poster = movie_poster
+			<br>
+			<br>
+			Notice that the first letter in the class Movie is capitalized. This is not obligatory, but is good form as seen in the <a href="http://google-styleguide.googlecode.com/svn/trunk/pyguide.html">Google Style Guide</a>.
+			<br>"""],
+				['lesson-XIII-iii', 'More on Important Terms', """As we have seen, OOP in Python uses some terms that are important to remember. I've listed some of them below, including ones that I have already explained in the notes above.
+			<br>
+			<br>
+			I'd like to start by adding Kunal's excellent screenshot, showcasing important terms used when creating and using a class.
+			<br>
+			<br>
+			<p align = "center">
+				<img src="http://s23.postimg.org/tlvgsbiqz/Screen_Shot_2014_04_18_at_4_52_12_PM.png">
+			</p>
+			<br>
+			<div class="part-concept">	
+				<div class="part-concept-title">
+					Module
+				</div>
+				<div class="concept-description">
+					A module is a file containing Python definitions and statements, essentially a Python program. The file is saved as a Python file, ending in <b>.py</b>.
+					<br>
+					Modules and the functions defined in a module can be imported into other modules and be used there.
+					<br>
+					In the screenshot above, <i>media.py</i> is a module and the module <i>webbrowser</i> has been imported into that module.
+					<br>
+					<br>
+					There are numerous built-in modules that can be used for many different things.
+				</div>
+			</div>
+			<div class="part-concept">
+				<div class="part-concept-title">
+					Objects
+				</div>
+				<div class="concept-description">
+					An object is a structure containing data (attributes) and coding functions (methods) that can use and manipulate the data.
+					<br>
+					<br>
+					Objects can call, use and manipulate each other.
+				</div>
+			</div>
+			<div class="part-concept">	
+				<div class="part-concept-title">
+					Class
+				</div>
+				<div class="concept-description">
+					A class can refer to a built in class in one of Python's modules or a class created by a programmer.
+					<br>
+					<br>
+					Classes are a kind of blueprint that contain data and functions that control behaviour. They can be used to create multiple instances with different names but the same basic properties. In the screenshot, Movie is a class while Toy_Story and Avatar are instances of the class.
+				</div>
+			</div>
+			<div class="part-concept">	
+				<div class="part-concept-title">
+					Method
+				</div>
+				<div class="concept-description">
+					A method is a procedure, that does something inside a class or instance.
+					<br>
+					<br>
+					An example is the procedure that opens a browser window, as seen in the screenshot above. see Instance Method below.
+					<br>
+					<br>
+					The <b>def __init__</b> that constructs/initiates the class is also a method.
+				</div>
+			</div>
+			<div class="part-concept">	
+				<div class="part-concept-title">
+					Constructor
+				</div>
+				<div class="concept-description">
+					A constructor is a method, used to initiate and create memory for an object. The object being a new instance of a class.
+					<br>
+					<br>
+					See more on the __init__ in <a href="#lesson-XIII-ii">Creating Classes</a> further up in the notes.
+				</div>
+			</div>
+			<div class="part-concept">	
+				<div class="part-concept-title">
+					self
+				</div>
+				<div class="concept-description">
+					Self is the fixed parameter in a class constructor that points to the class object being created.
+					<br>
+					<br>
+					So if I have a class Movie, as seen above, self points to an instance of that class, be it Toy_Story or Avatar.
+				</div>
+			</div>
+			<div class="part-concept">	
+				<div class="part-concept-title">
+					Instances
+				</div>
+				<div class="concept-description">
+					An instance is an object created using a class. The instance uses the properties and methods of the class, but can also have unique properties of it's own.
+					<br>
+					<br>
+					In the screenshot above, the class Movie has been used to create the instances Toy_Story and Avatar.
+				</div>
+			</div>
+			<div class="part-concept">	
+				<div class="part-concept-title">
+					Instance Variables
+				</div>
+				<div class="concept-description">
+					Instance variables are variables defined within a class. These variables are used to define certain aspects of the of the class.
+					<br>
+					The instance variables all point to self(mentioned above) and are probably, but not necessarily, unique for each instance.
+					<br>
+					<br>
+					In the screenshot above, we can see that the instance variables tell us different things about Movie, like the title, storyline etc. And when we create Toy_Story or Avatar we define, and store in memory, the different values of the variables for each of these two instances.
+				</div>
+			</div>
+			<div class="part-concept">	
+				<div class="part-concept-title">
+					Instance Methods
+				</div>
+				<div class="concept-description">
+					An instance method is a method within a class, used to enable each instance of the class to do the same thing. Much like instance variables, only with a specific function rather than just an integer or string value.
+					<br>
+					<br>
+					Again, the screenshot above gives us the <b>webbrowser.open</b> example, where this method can be used by both Toy_Story and Avatar, to open their trailer in a webbrowser.
+				</div>
+			</div>
+			<div class="part-concept">	
+				<div class="part-concept-title">
+					Class Variables
+				</div>
+				<div class="concept-description">
+					A class variable is similar to an instance variable, in that it is shared by all instances of the class. BUT! It is defined outside any method's of the class. This means that it is an attribute of the class, but not an attribute of an instance of the class, compared to the instance variables above, where we can see that self.title and self.storyline are attributes of every instance of the class.
+					<br>
+					<br>
+					In other words, a class variable is almost not a variable for the instances of the class, since it will always be the same for all instances. If it is changed and get's a new value of some kind, this value will change for all instances of the class. But it is, of course, a variable, since it's value can be changed.
+					<br>
+					<br>
+					Python has some pre-defined class variables or <i>class attributes</i>, one of them being <b>__doc__</b>. This can be used to supply some kind of documentation for the class you have created, so that potential users can see what it does, quickly and easily. Adding a __doc__ class variable to your class can be done like this:
+					<div class = "part-concept">
+						<span class = "specialfont-2">class</span> Nothing_special(object):
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&quot;&quot;&quot;This class does nothing special&quot;&quot;&quot;
+						<br>
+					</div>
+					Other pre-defined class variables are __name__, __dict__, __bases__ and __module__.
+				</div>
+			</div>
+			<div class="part-concept">	
+				<div class="part-concept-title">
+					Class Methods
+				</div>
+				<div class="concept-description">
+					I mention these only because I felt curious about them, although we haven't gone through the subject of class methods.
+					<br>
+					<br>
+					I'm actually not completely sure how class methods work. It seems intuitive that they call on a class, rather than instances of the class, but other than this, it seems to me that the use of class methods is above my current knowledge of programming.
+					<br>
+					I found mention of meta-models on wikipedia <a href="https://en.wikipedia.org/wiki/Class_method#Class_methods">here</a>, but this is clearly too advanced for me at the moment.
+					<br>
+					<br>
+					I'm looking forward to getting to a level where I understand it.
+				</div>
+			</div>
+			<div class="part-concept">	
+				<div class="part-concept-title">
+					Inheritance
+				</div>
+				<div class="concept-description">
+					The term <i>inheritance</i> deals with the fact that we can create subclasses that are children of other classes and inherit their or some of their properties from a parent class.
+					<br>
+					<br>
+					If we have a parent class called Family_members with properties such as name, age etc, then we can have subclasses(children) of the class Family_members that could be Adults, Kids and Pets. These three subclasses can all inherit the properties of name and age, but can also have uniques properties of their own. Maybe the Adults have a job property, the Kids have a favourite_toy property and the Pets have a species property.
+					<br>
+					<br>
+					A person who does a good job of explaining inheritance in an easy way is <a href="http://www.jesshamrick.com/2011/05/18/an-introduction-to-classes-and-inheritance-in-python/">Jess Hamrick</a>.
+				</div>
+			</div>
+			<div class="part-concept">	
+				<div class="part-concept-title">
+					Method Overriding
+				</div>
+				<div class="concept-description">
+					Method overriding is when you create a new method in a child class that overrides, or replaces, a corresponding method in a parent class.
+					<br>
+					<br>
+					The overriding method has the same name as the method in the parent class.
+					<br>
+					<br>
+					An example could be that we have created the parent class Family_members:
+					<div class = "part-concept">
+						<span class = "specialfont-2">class</span> Family_members(object):
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class = "specialfont-2">def</span> __init__(self, name, age, category):
+					</div>
+					<br>
+					And we then create the child class adult:
+					<div class = "part-concept">
+						<span class = "specialfont-2">class</span> Adult(Family_members):
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class = "specialfont-2">def</span> __init__(self, name, job):
+					</div>
+					<br>
+					Here, the <b>def __init__</b> method in Adult, overrides the <b>def __init__</b> method in Family_members. This doesn't mean that the parent's method is no longer functional, it just means that some of the things it does are overruled by the child's method.
+					<br>
+					If we still want to make sure that the things initiated in the parent are used in the child, we can simply call the parent like this:
+					<div class = "part-concept">
+						<span class = "specialfont-2">class</span> Adult(Family_members):
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class = "specialfont-2">def</span> __init__(self, name, job):
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;Family_members.__init__(self, name, age, "adult")
+					</div>
+				</div>
+			</div>
+			<div class="part-concept">	
+				<div class="part-concept-title">
+					Subtype Polymorphism
+				</div>
+				<div class="concept-description">
+					In Python, polymorphism refers to the fact that Python code can adapt to different types of data input. A proper definition seems to be quite long and complicated, so I'll leave that for the pro's until I fully understand the more intricate aspects myself.
+					<br>
+					<br>
+					But when readig about inheritance I came across the term <i>Subtype Polymorphism</i> several places, so I'd like to mention it.
+					<br>
+					As I understand it, when a child object inherits from it's parent object, it(the child) can be used and handled by programs that can handle the parent object.
+					<br>
+					i.e. the code does not have to be designed to handle the child, because the child is a sub-class of the parent and therefore adheres to the rules that makes it possible for the code to handle the parent.
+				</div>
+			</div>
+			<br>
+			In researching the above information I used the course material, but also searched and read articles on the following sites:
+			<br>
+			<br>
+			<a href="https://en.wikipedia.org/wiki/Class_method#Class_methods">Wikipedia</a>
+			<br>
+			<a href="http://www.toptal.com/python/python-class-attributes-an-overly-thorough-guide">toptal.com</a>
+			<br>
+			<a href="https://docs.python.org/2/tutorial/classes.html">Python Software Foundation</a>
+			<br>
+			<a href="http://www.tutorialspoint.com/python/python_modules.htm">tutorialspoint.com</a>
+			<br>
+			<a href="http://stackoverflow.com/questions/18955141/what-is-a-constructor-and-what-does-it-do">stackoverflow.com</a>
+			<br>
+			<a href="https://julien.danjou.info/blog/2013/guide-python-static-class-abstract-methods">julien.danjou.info</a>
+			<br>
+			<a href="http://www.jesshamrick.com/2011/05/18/an-introduction-to-classes-and-inheritance-in-python/">jesshamrick.com</a>
+			<br>
+			<a href="http://lgiordani.com/blog/2014/08/21/python-3-oop-part-4-polymorphism/">lgiordani.com</a>
+			<br>
+			<br>
+			And probably quite a few more that I haven't bookmarked and haven't got in my recent browser history.
+			<br>"""]
+			]
+
+lesson14 = [
+				['lesson-XIV-i', 'What is a Network?', """Networks 101:
+<br>
+<ul>
+	<li>A network is a group of entities that can communicate, even though they are not all directly connected.</li>
+	<li>If all nodes in the group can communicate directly, they are not considered a network.</li>
+	<li>If two or more nodes communicate through a third node without being in direct contact with each other, all of these nodes are considered to be a network.</li>
+</ul>
+To create and use a network, we must be able to encode and interpret message, so that we can:
+<ol start = "1">
+	<li>Send a message to a specific location(by deciding which nodes to use or how to route them).</li>
+	<li>Decide who can use the network and when they can use it, to avoid conflicting or faulty messages.</li>
+</ol>
+Ex. We can send a message using bits. These bits can be sent using electrons or photons. So we have:
+<br>
+<br>
+<b>Message =&gt; bits =&gt; electrons/photons</b>
+<br>
+<br>
+A router figures out which way to send the information. It will do it's best but can, of course, not be flawless. So in the case of our current internet, we have Best Effort Delivery with no guarantees of delivery time or bit-rate.
+<br>
+<br>
+Read more about <a href = "https://en.wikipedia.org/wiki/Best-effort_delivery">Best Effort on Wikipedia</a>."""],
+				['lesson-XIV-ii', 'Measuring a Network', """There are different ways of measuring a network. Either by time or by information-load.
+<br>
+<div class="part-concept">	
+	<div class="part-concept-title">
+		Latency
+	</div>
+	<div class="concept-description">
+		The time that it takes for a message to go from source to destination. From the time when you start sending to the time when the receiver starts receiving.
+	</div>
+</div>
+<div class="part-concept">	
+	<div class="part-concept-title">
+		Bandwidth
+	</div>
+	<div class="concept-description">
+		The amount of information that can be transmitted by unit of time. Often measured in Mbps (Mega bits per second).
+		<br>
+		<br>
+		A bit is the smallest unit of information. A binary choice of yes/no or 0/1. One bit can therefore allow us to choose between two different pieces of information.
+		<br>
+		<br>
+		We can try to optimize our use of bits by creating questions that have a 50/50 chance of being yes or no.
+		<br>
+		<br>
+		Also see <a href="https://en.wikipedia.org/wiki/Binary_tree">Binary Trees.</a>
+	</div>
+</div>"""],
+				['lesson-XIV-iii', 'Protocols', """A protocol is a set of rules that define how a client(web browser) and a server communicate. Most web-sites use HTTP.
+<br>
+<br>
+HTTP: <span class = "specialfont-1">H</span>yper <span class = "specialfont-1">T</span>ext <span class = "specialfont-1">T</span>ransfer <span class = "specialfont-1">P</span>rotocol
+<br>
+<br>
+When a browser contacts a server, the chain of events can be described in the following way:
+<ol start = "1">
+	<li>Client sends a GET request to the server</li>
+	<li>The server finds the requested object.</li>
+	<li>The server sends back a response, consisting of the contents of the requested object.</li>
+</ol>"""]
+			]
+
+lesson15 = [
+				['lesson-XV-i', 'Terminology for Web Communication', """Some of the following has been covered before and thus appears earlier in the notes. But I have chosen to write them down, so that I can refer back to them when reviewing this stage.
+<div class="part-concept">	
+	<div class="part-concept-title">
+		HTML document layout
+	</div>
+	<div class="concept-description">
+		&lt;!DOCTYPE HTML&gt;: the type of document, i.e. HTML5
+		<br>
+		<br>
+		&lt;html&gt; and &lt;/html&gt; are the opening and closing tags around the entire document, minus the doctype.
+		<br>
+		<br>
+		&lt;head&gt; and &lt;/head&gt; are the opening and closing tags for the head, which can contain meta-data, Javascript, CSS and the document title, which appears in the top of a browser tab. Written in the following way:  &lt;title&gt;&quot;Name of the page&quot;&lt;/title&gt;
+		<br>
+		<br>
+		Then we have the body tag, which is the actual content of the document/site. &lt;body&gt; and &lt;/body&gt; open and close this part of the document.
+	</div>
+</div>
+<div class="part-concept">	
+	<div class="part-concept-title">
+		URL: Uniform Resource Locator
+	</div>
+	<div class="concept-description">
+		This is written in the following way:
+		<br>
+		<br>
+		http://www.nameofsite.com/
+		<br>
+		<br>
+		The <b>http</b> is the <span class="specialfont-2">protocol</span>, followed by a colon and two slashes.
+		<br>
+		Then we have the <span class="specialfont-2">host</span> (in this example <b>www.nameofsite.com</b>), followed by a slash, which leads us to the <span class = "specialfont-2">path</span>. 
+		<br>
+		<br>
+		The host is translated into an IP address. More reading on IP on wikipedia here: <a href = "https://en.wikipedia.org/wiki/Internet_Protocol">Internet Protocol</a>
+		<br>
+		<br>
+		The path can be any number of sub-paths, like sub-domains, single pages etc.
+	</div>
+</div><div class="part-concept">	
+	<div class="part-concept-title">
+		Query parameters (or GET parameters)
+	</div>
+	<div class="concept-description">
+		An example is:
+		<br>
+		<br>
+		http://example.com/foo?p=1&amp;q=neat
+		<br>
+		<br>
+		The query parameter is basically a name that is assigned a value, so in this case the first name is p with the value 1 and the second name is q with the value neat.
+	</div>
+</div><div class="part-concept">	
+	<div class="part-concept-title">
+		Fragment
+	</div>
+	<div class="concept-description">
+		An example is:
+		<br>
+		<br>
+		http://example.com/foo#fragment
+		<br>
+		<br>
+		The fragment is not sent as a request to the server but exists purely in the browser.
+		If the fragment follows a query parameter, it follows that query parameter.
+	</div>
+</div><div class="part-concept">	
+	<div class="part-concept-title">
+		The port
+	</div>
+	<div class="concept-description">
+		In the following URL:
+		<br>
+		<br>
+		http://localhost:8000/
+		<br>
+		<br>
+		localhost is the address of the machine we are working on and :8000 is the port. The default value for the port is :80.
+		<br>
+		<br>
+		This is important if you are a web-developer, as it is very likely that you will be accessing your machine through some port, often not the default port 80.
+	</div>
+</div><div class="part-concept">	
+	<div class="part-concept-title">
+		HTTP
+	</div>
+	<div class="concept-description">
+		HTTP, as has been mentioned several times, stands for Hyper Text Transfer Protocol
+		<br>
+		<br>
+		This is the protocol that a browser uses when talking to web-servers
+		<br>
+		<br>
+		The browser can send a request for the URL www.example.com/foo. 
+		The request begins with a request line.
+		<br>
+		<br>
+		An example is:
+		<br>
+		GET /foo HTTP/1.1
+		<br>
+		<br>
+		The request line consists of three parts. The method (GET), the path (/foo) and the version(HTTP 1.1)
+		<br>
+		<br>
+		Requests are followed by headers, using the format <span class="specialfont-3">name: value</span>
+		<br>
+		<br>
+		Headers can be:
+		<br>
+		Host: www.example.com
+		<br>
+		User-agent: chrome v.17
+		<br>
+		<br>
+		You can create any header you want to add meta-info to a request
+	</div>
+</div><div class="part-concept">	
+	<div class="part-concept-title">
+		HTTP response
+	</div>
+	<div class="concept-description">
+		These are simple responses and may look like: HTTP/1.1 200 OK. This is the status line
+		<br>
+		<br>
+		In this we have the HTTP version (HTTP 1.1), the status code (200) and the reason phrase (OK)
+		<br>
+		<br>
+		The status code tells us whether things work or whether there's an error, like the infamous 404 error that everyone has probably encountered.
+		Here's a useful wikipedia list of HTTP responses: <a href = "https://en.wikipedia.org/wiki/List_of_HTTP_status_codes">HTTP responses</a>
+		<br>
+		<br>
+		The response is also followed by headers, such as:
+		<br>
+		<br>
+		Date:
+		<br> 
+		Server: 
+		<br>
+		Content-type:
+		<br>
+		Content-length: 
+	</div>
+</div><div class="part-concept">	
+	<div class="part-concept-title">
+		Servers
+	</div>
+	<div class="concept-description">
+		Servers respond to HTTP requests as mentioned earlier.
+		<br>
+		<br>
+		We can differentiate between <span class="specialfont-2">static</span> and <span class="specialfont-2">dynamic</span> content.
+		<br>
+		Basically static content consists of pre-written files and images.
+		<br>
+		<br>
+		Dynamic content is what we refer to as web-applications, and allow users to add or change what they are seeing, by making changes on the fly. Like Facebook, where you can add pictures, write stuff etc.
+	</div>
+</div>"""]
+			]
+
+lesson16 = [
+				['lesson-XVI-i', 'Forms', """A form is a part of an HTML document which let's a user input data, like text, the click of a virtual button etc.
+<br>
+<br>
+For this, we use the &lt;form&gt; tag
+<br>
+<br>
+The form tag can contain different tags, like for example the &lt;input&gt; tag, which allows us to take in input.
+<br>
+<br>
+<b>The input can have different attributes like:</b>
+<div class="part-concept">	
+	<div class="part-concept-title">
+		name
+	</div>
+	<div class="concept-description">
+		example:
+		<br>
+		<br>
+		&lt;input name = &quot;the_name_of_the_input_value&quot;&gt;
+	</div>
+</div>
+<div class="part-concept">	
+	<div class="part-concept-title">
+		type
+	</div>
+	<div class="concept-description">
+		example:
+		<br>
+		<br>
+		&lt;input type = &quot;submit&quot;&gt;
+		<br>
+		&lt;input type = &quot;text&quot;&gt;
+		<br>
+		&lt;input type = &quot;password&quot;&gt;
+		<br>
+		&lt;input type = &quot;checkbox&quot;&gt;
+		<br>
+		&lt;input type = &quot;radio&quot;&gt;
+	</div>
+</div>
+<div class="part-concept">	
+	<div class="part-concept-title">
+		value
+	</div>
+	<div class="concept-description">
+		example:
+		<br>
+		<br>
+		&lt;input type = &quot;radio&quot; value = &quot;something&quot;&gt;
+	</div>
+</div>
+Forms have different attributes like:
+<div class="part-concept">	
+	<div class="part-concept-title">
+		action
+	</div>
+	<div class="concept-description">
+		example:
+		<br>
+		<br>
+		&lt;form action = &quot;/foo&quot;&gt;
+		<br>
+		<br>
+		This tells the browser where the form should submit the input to, in this case it is the path /foo of the web-page the form is a part of.
+		<br>
+		<br>
+		Using the example:
+		<br>
+		<br>
+		&lt;form action = &quot;http://www.google.com/search&quot;&gt;
+		<br>
+		<br>
+		we can perform a google search from our input box.
+	</div>
+</div>
+<div class="part-concept">	
+	<div class="part-concept-title">
+		label
+	</div>
+	<div class="concept-description">
+		example:
+		<br>
+		<br>
+		&lt;label&gt;
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;One
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type = &quot;radio&quot; name = &quot;q&quot; value = &quot;one&quot;&gt;
+		<br>
+		&lt;/label&gt;
+		<br>
+		<br>
+		This labels the radio-button with the text One
+	</div>
+</div>
+<div class="part-concept">	
+	<div class="part-concept-title">
+		select
+	</div>
+	<div class="concept-description">
+		example:
+		<br>
+		<br>
+		&lt;select name = &quot;q&quot;&gt;
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;One&lt;/option&gt;
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;Two&lt;/option&gt;
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;Three&lt;/option&gt;
+		<br>
+		&lt;/select&gt;
+		<br>
+		<br>
+		This creates a dropdown menu with the options One, Two and Three, where we can select either of these three for our value of q.
+		<br>
+		<br>
+		If we give one of the options a value, for example value = &quot;1&quot;, this assigns the value 1 to q when the action is performed, as opposed to just giving it the value that the option states, i.e. One.
+	</div>
+</div>"""]
+			]
+
+lesson17 = [
+				['lesson-XVII-i', 'Modulus Operator', """This is an operator that gives us the remainder of a division operation between two numbers. It is written with the <span class="specialfont-2">%</span>, i.e.
+<br>
+<br>
+&lt;number&gt;%&lt;modulus&gt;.
+<br>
+<br>
+In the example: <b>15%18</b>, we get 3, since this is the remainder when dividing 15 by 18."""],
+				['lesson-XVII-ii', 'Dictionary', """Dictionaries are similar to strings and lists, in that they contain a sequence of something. But where the string is a sequence of characters (perhaps creating a word or sentence) and the list is a sequence of strings and/or integers, a dictionary is a sequence of pairs, each pair consisting of a key and a value. A dictionary is opened and closed with curly brackets {}.
+<br>
+<br>
+Example (These are the name and ages of myself, my girlfriend and our son):
+<br>
+<br>
+d = {'Jens': 38, 'Mette': 36, 'Nor': 2}
+<br>
+<br>
+The values can be anything you want, even other dictionaries.
+<br>
+<br>
+Where strings are immutable, dictionaries, like lists, are mutable.
+When mutating a dictionary, we are actually updating that dictionary, in that we change the value for a key into something new like:
+<br>
+<br>
+d[1] = 37, if Mette has just had a birthday and her aged needs updating.
+<br>
+<br>
+When indexing a string, we can get the nth character of a string by typing s[n] for the string s.
+<br>
+<br>
+When indexing a list, we can get the nth element of a list by typing p[n] for the list p.
+<br>
+<br>
+When indexing a dictionary, we can get the value of the nth key by typing d[n] for the dictionary d. Note that this only returns the value of the nth key, not the string or name of the value.
+<br>
+<br>"""]
+			]
+
+lesson18 = [
+				['lesson-XVIII-i', 'Some Basic info on GAE Datastore', """Tables are know as entities in GAED.
+<ul>
+<li>Columns are not fixed in GAED entities.</li>
+<li>Every entity has an ID.</li>
+<li>parents/ancestors, where an entity can be the child (or descendent) of another entity. The parent entity is referred to as an ancestor of the child.</li>
+</ul>
+When using the Datastore, it is important to read the documentation to understand what can be created and used. This also goes for pretty much anything in programming.
+<br>
+<br>
+GAE is a convenient way of creating a small database. We are using Jinja2, which is built into GAE.
+<br>
+<br>
+In Google App Engine, the default is HTML text, meaning that, unless told otherwise, the browser will interpret whatever you send as HTML.
+<br>
+If you want to be able to see the text, as read by humans, we can set the Content-Type to 'text/plain'.
+<br>
+<br>
+Here's a link to <a href ="https://cloud.google.com/appengine/docs">Google App Engine</a> """],
+				['lesson-XVIII-ii', 'GET vs POST', """I've gathered some info about GET and POSTS in the following table, for future reference.
+<table>
+	<tr>
+		<td><b>GET</b></td>
+		<td><b>POST</b></td>
+	</tr>
+	<tr>
+		<td>Parameters in URL</td>
+		<td>Parameters in body</td>
+	</tr>
+	<tr>
+		<td>Used for fetching documents</td>
+		<td>Used for updating data</td>
+	</tr>
+	<tr>
+		<td>Have a maximum URL length</td>
+		<td>Have no maximum length, but can be configured to have a max length</td>
+	</tr>
+	<tr>
+		<td>OK to cache</td>
+		<td>NOT OK to cache</td>
+	</tr>
+	<tr>
+		<td>Shouldn't change the server, even though the same request repeats</td>
+		<td>OK to change the server</td>
+	</tr>
+	<tr>
+		<td>Conclusion!: Used mainly for fetching documents and data</td>
+		<td>Conclusion!: Used mainly for updating server data</td>
+	</tr>
+</table>"""]
+			]
+
+lesson19 = [
+				['lesson-XIX-i', 'Validation', """In short, validation means that your code (Server-side, which goes without saying) checks any inputs given to make sure that they are of the type that are expected.
+<br>
+<br>
+Your server can receive junk, so it is important to be able to validate your parameters, so that your server knows what to expect and when to ignore or block invalid data(which could be harmful or just take up unnecessary space and memory)  from entering the system.
+<br>
+<br>
+There are many ways of doing this. One way is to limit what the user can enter, by only giving them valid possibilities. But this is not a fool-proof method, so we have to (or should) do more than this.
+<br>
+<br>
+But we also have to verify what the user enters and complain if the data is bad. You could, for example, create an error message will tell your user that you don't like their data or the way it is formatted.
+<br>
+<br>
+I found an old article from 2002, by Paul Evans, which gives some good examples of validation and is both fun and informative to read: <a href="http://www.tldp.org/LDP/LG/issue83/evans.html">Validation</a>"""],
+				['lesson-XIX-ii', 'String Substitution', """String substitution is great for returning different sets of text with different content, by having the possibility of exchanging certain words for others. Useful for when generating HTML that has to be able to change depending on (for example) user input.
+<br>
+<br>
+For example, if we want to output some bold text, we can do it in the following way:
+<br>
+<br>
+&lt;b&gt;some bold text&lt;/b&gt;
+<br>
+<br>
+But what if we want to be able to write any text and output it in bold letters without creating a new bold string every time? We can do the following:
+<br>
+<br>
+a = &quot;some bold text&quot;
+&quot;&lt;b&gt;%s&lt;/b&gt;&quot; %a
+<br>
+<br>
+This also outputs the text <b>some bold text</b> in bold letters.
+<br>
+<br>
+We can substitute several strings by writing %s1 and %s2, where s1 and s2 are two different variable strings that can be substituted."""],
+				['lesson-XIX-iii', 'Value Attribute', """The value attribute allows us to give an input field/box a predefined value. This can be a specific word (or other type of value), as in the example, where the value is set to &quot;cool&quot;: 
+<br>
+<br>
+&lt;input type = &quot;text&quot; value = &quot;cool&quot;&gt;
+<br>
+<br>
+Or we can use string substitution, to make sure that the value is whatever the user has given us as input, as in:
+<br>
+<br>
+&lt;input type = &quot;text&quot; value = &quot;%(users_input)s&quot;&gt;
+<br>
+<br>"""],
+				['lesson-XIX-iv', 'Escaping', """If not written properly, your code can let a user input code through a form that may do more or less harmful things to it. They could, for example, add long pieces of code that ultimately could completely alter the way your website looks and behaves.
+<br>
+<br>
+This can, however, be avoided by <span class = "specialfont-2">escaping</span> your code, whereby it is interpreted in it's raw form and will be displayed as such, without the formatting having any effect on your code. In the example of a comment to a blog, containing HTML formatting, the whole thing will be displayed as a string, with the HTML formatting being visible to the reader, in much the same way as if it had been coded to show formatting using things like &amp;lt; to display &lt;.
+<br>
+<br>
+Substituting potentially harmful HTML tags, quotes and &amp; can be done using the built in cgi in Python, where we have the built in function cgi.escape, which will of course only work if we import cgi into our py file.
+<br>
+We can also use <span class = "orange_text">autoescape</span> = <span class = "purple_text">true</span> in our Jinja2 environment."""],
+				['lesson-XIX-v', 'Redirection', """We use redirection to make our web-site with a form, blog or other thing become useable as more than a one-time thing that goes away every time we refresh the browser.
+<br>
+<br>
+By redirecting to a new page, to deliver a message of succes or error, or to let us see the comment we just wrote, we get a more interactive page, that can develop over time with user input. If we didn't redirect, but just showed the results of, for example, a comment directly after input, we would just have a pretty useless form that has no long term use.
+<br>
+<br>"""]
+			]
+
+lesson20 = [
+				['lesson-XX-i', 'The Basics of HTML Templates', """When writing HTML for a web application, templates are a great tool, enabling us to write shorter and better code that can be reused to create the style and general content of several pages or bits of pages, in much the same way that CSS can be reused for styling the actual content of the HTML.
+<br>
+<br>
+Templates:
+<br>
+<ul>
+	<li>Separate different types of code</li>
+	<li>Make more readable code</li>
+	<li>Make more secure websites</li>
+	<li>Create HTML that is easier to modify</li>
+</ul>
+<br>
+<br>
+A template library is a library that can help us build complicated strings(html).
+<br>
+<br>
+For these lessons, we have used jinja2, which is built into Google App Engine. Read more about jinja2 at: <a href="http://www.jinja.pocoo.org
+">jinja</a>
+<br>
+<br>
+Below are some valuable things that can be used within HTML templates for making them versatile  and, as stated above, easily reused with different content.
+<div class="part-concept">	
+	<div class="part-concept-title">
+		Variable Substitution
+	</div>
+	<div class="concept-description">
+		When written within double curly brackets, the variable can be used many times and will, of course, change with the value of the variable in question:
+		<br>
+		<br>
+		{{variable}}
+	</div>
+</div>
+<div class="part-concept">	
+	<div class="part-concept-title">
+		Statement Syntax
+	</div>
+	<div class="concept-description">
+		Statement syntax is written within curly brackets with percent signs. They allow us to use python loops (if, for etc.) and other similar things within our HTML:
+		<br>
+		<br>
+		{% statement %}
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;output
+		<br>
+		{% end statement %}
+		<br>
+		<br>
+		example:
+		<br>
+		<br>
+		{% if name == "Jens" %}
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;Hello Jens
+		<br>
+		{% else %}
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;Who might you be?
+		<br>
+		{% endif %}
+		<br>
+		<br>
+		The final {% endif %} is there to tell jinja that the statement is ended and is there as a substitution for the whitespace we would use in python.
+	</div>
+</div>
+<div class="part-concept">	
+	<div class="part-concept-title">
+		Helpful Tips
+	</div>
+	<div class="concept-description">
+	writing a pipe and the word escape, will escape HTML syntax. like:
+	<br>
+	<br>
+	| escape
+	<br>
+	<br>
+	But better than the above is the aforementioned autoescape = True
+	<br>
+	<br>
+	By writing a pipe and the word safe, we opt for unsafe mode, letting the input HTML code be active. Like:
+	<br>
+	<br>
+	| safe
+	<br>
+	<br>
+	Always automatically escape variables when possible!
+	<br>
+	<br>
+	Minimize code in templates, where possible!
+	<br>
+	<br>
+	Minimize html in your python code by keeping it in your templates!
+	</div>
+</div>
+<div class="part-concept">	
+	<div class="part-concept-title">
+		Template inheritance
+	</div>
+	<div class="concept-description">
+		You can make templates inherit from parent templates, by creating a basic template that contains everything that you want the user to see on every page that is a child of the template. The basic template has to contain the following in it's body:
+		<br>
+		<br>
+		{% block content %}
+		<br>
+		This is where the content of the child goes.
+		<br>
+		{% endblock %}
+		<br>
+		<br>
+		A child of this template starts with:
+		<br>
+		<br>
+		{% extends "name_of_basic_template.html" %}
+		<br>
+		{% block content %}
+		<br>
+		this is where the child template's code goes
+		<br>
+		{% endblock  %}
+	</div>
+</div>"""]
+			]
+
+lesson21 = [
+				['lesson-XXI-i', 'Basic Database 101', """Any time you want to store large amounts of data, you will probably want to use a database. Some information on databases follows below.
+<div class="part-concept">	
+	<div class="part-concept-title">
+		What is a database
+	</div>
+	<div class="concept-description">
+		<br>
+		<br>
+		A program that stores and retrieves large amounts of (structured) data.
+		<br>
+		<br>
+		The word database can refer to:
+		<br>
+		<ul>
+			<li>the program or database itself</li>
+			<li>a machine (server) where the data(base) is stored</li>
+			<li>several linked machines, where data is stored</li>
+		</ul>
+	</div>
+</div>
+<div class="part-concept">	
+	<div class="part-concept-title">
+		Table-structure in a database
+	</div>
+	<div class="concept-description">
+		A database is often structured as a series of tables.
+		<br>
+		A series of columns gives us the standard types of data in each instance of data in the table. The instances are represented by the rows, each of which has one of each of the column types. These can be things  like ID, date, user, etc.
+		<br>
+		<br>
+		Example table:
+		<table>
+			<tr>
+				<td>ID</td>
+				<td>USER</td>
+				<td>DATE</td>
+				<td>PASSWORD</td>
+				<td>ANIMAL</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>geneatic53</td>
+				<td>010100</td>
+				<td>XXXXXXXXX</td>
+				<td>goat</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>oprah45</td>
+				<td>140672</td>
+				<td>YYYYYYYYY</td>
+				<td>gnu</td>
+			</tr>
+		</table>
+		<br>
+		<br>
+		Now we can imagine if we had millions of table rows and had to write code to query this. There are numerous downsides of querying data by hand in this way, for example:
+		<ul>
+			<li>error-prone</li>
+			<li>tedious</li>
+			<li>slow</li>
+		</ul>
+		We want a databases to be able to take vast amounts of data and answer queries on them within a reasonable time.
+		Luckily there are built-in wyas of doing this in most types of databases. One way of doing this is through indexes. See more further down the page.
+	</div>
+</div>
+<div class="part-concept">	
+	<div class="part-concept-title">
+		Types of databases
+	</div>
+	<div class="concept-description">
+		There are different types of databases. Here are some of them.
+		One type of database is a so called Relational Database, using SQL(Structured Query Language). Read more about SQL on wikipedia <a href = "https://en.wikipedia.org/wiki/SQL">here</a>. The most popular relational databases are:
+		<ul>
+			<li>Postyresql</li>
+			<li>MySQL</li>
+			<li>SQLite</li>
+			<li>Oracle(who also owns MySQL)</li>
+		</ul>
+		MySQL is used by almost everyone.
+		<br>
+		<br>
+		SQLite is not as powerful, but sufficient for smaller projects like the one we are working on in the IPND.
+		<br>
+		<br>
+		Other popular databases are:
+		<ul>
+			<li>Google AppEngine's Datastore</li>
+			<li>Amazon Dynamo</li>
+			<li>NoSQL databases like Mongo, or Couch</li>
+		</ul>
+	</div>
+</div>"""],
+				['lesson-XXI-ii', 'SQL or Structured Query Language', """SQL was invented in the 1970's, long before the internet as we know it existed. It is not quite a programming language, but rather a language that is designed to query and get data from a database.
+<br>
+Below is an example of a SQL query. 
+<br>
+<br>
+SELECT * FROM links WHERE id = 5;
+<br>
+<br>
+Which basically means:
+<br>
+<ul>
+	<li>SELECT == fetch data</li>
+	<li>* == all columns</li>
+	<li> FROM links == from a table with the name <i>links</i>table</li>
+	<li> "id = 5" == a specific constraint</li>
+</ul>
+The constraint can use AND, OR, >, < etc. to create greater specificity
+<br>
+<br>
+We can also use ORDER BY to get our queries in a specific order, for example by date. We can control this by specifying Asc(ending) or Desc(ending), but the default is ascending."""],
+				['lesson-XXI-iii', 'Joins', """As this is not something we have been using in this course, and I have been led to understand that it is not used very often, I'll just touch on this shortly.
+<br>
+<br>
+Joins are used to link several tables in a database, by some index that they may have in common. An example could be the you have a table with all user-data. In this table a user may have an ID. In another table, we may have a bunch of links or other input from users. One of the ways these can be sorted is by user ID. So this parameter can be used to link our two tables and to query data from one table through the other."""],
+				['lesson-XXI-iv', 'Indexes', """When sequential scans are too slow, because of too many objects in a list/table/database, we can use indexing to sort the list that can be scanned easily, whereby we can increase our lookup time dramatically.
+<br>
+<br>
+For this we create a hashtable, like a library, where each indexed item has a key. These keys are not sorted and can be looked up just using the key. This gives us a constant lookup time which is not a function of the number of keys in the hashtable
+<br>
+<br>
+We can, however, use a tree instead of a hashtable. The tree is a sorted datastructure, where entities(the term used in GAE) can be parents or children of other entitites. Lookup time decreases with the size of the tree, but we get a nice and strict hierarchy."""],
+				['lesson-XXI-v', 'ACID', """This is an abbreviation for a set of properties that ensure reliability in  database processing.
+<br>
+<br>
+<span class = "specialfont-1">A</span>tomicity: all parts of a transaction succeed or fail together.
+<br>
+<span class = "specialfont-1">C</span>onsistency: the database will always be consistent
+<br>
+<span class = "specialfont-1">I</span>solation: no transaction can interfere with another's, so each transaction has to (in some way) wait for another, even if they are input simultaneously
+<br>
+<span class = "specialfont-1">D</span>urability: once a transaction is committed, it won't be lost
+<br>
+<br>
+For a more in-depth description on the different factors, take a look at Wikipedias page on <a href="https://en.wikipedia.org/wiki/ACID">ACID</a>"""]
+			]
