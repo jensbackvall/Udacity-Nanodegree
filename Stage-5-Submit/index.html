@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<!-- In the head below, I initialize alle the CSS, JS and other things I need to make the page work.
+This also contains the title of the page, displayed at the top of the browser tab. -->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jQuery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>IPND notes</title>
+    <link rel="icon" type="image/png" href="css/images/favicon-16x16.png" sizes="16x16" />
+  </head>
+  <body>
+<!-- Using Bootstrap, means that I should follow a specific way of building my page. This is why I am using the container class as an outer frame for everything, within which I have rows and columns of variýing width.  -->
+  	<div class="container">
+  		<div class="row">
+        <div class="col-md-12 bar">  
+  			 <h1>Intro to Programming NanoDegree</h1>
+        </div>
+  		</div>
+  		<div class="row">
+  			<div class="col-md-3 menu concept">
+  				<h4>Table of Contents</h4>
+<!-- Below is where I generate all of the drop-down menus by looping through my variable called lesson, which is a set of nested lists containing all of my notes, their titles and the names used to access them through the menus. -->
+          {% for items in lesson %}
+            <div class="dropdown">
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                {{items[0]}}
+                <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                {% for content in items[1:] %}
+                  <li><a href="#{{content[0]}}">{{content[1]}}</a></li>
+                {% endfor %} 
+              </ul>
+            </div>
+          {% endfor %}
+  			</div>
+<!-- Below is one thing that can be displayed in the main box on the page. It is my welcoming message that is displayed automatically using the short snippet of javascript at the very bottom of this index.html file. -->
+        <div class="col-md-9 contents concept" id="welcome">
+          <p class="concept-title">
+            WELCOME
+          </p>
+          These are my notes from the Udacity Nanodegree Introduction to Programming.
+          <br>
+          Jump right in!
+          <br>
+          <img src="css/images/jensjump.jpg" class="img-responsive img-rounded" alt="Jens jumps of a roof in snow">
+        </div>
+<!-- Below is where I loop through al the information in my lesson variable to generate all of the content for the page. -->
+        {% for items in lesson %}
+          {% for content in items[1:] %}
+            <div class="col-md-9 contents concept" id="{{content[0]}}">
+              <p class="concept-title">
+                {{content[1] | safe}}
+              </p>
+             {{content[2] | safe}}
+            </div>
+          {% endfor %}
+        {% endfor %}
+<!-- Below is an error message for when a comment is empty. This is accessed through the main.py file through redirect. -->
+        <div class="col-md-9 contents concept" id="error">
+          <p class="concept-title">
+            COMMENT ERROR
+          </p>
+          <img src="https://marillesblog.files.wordpress.com/2012/01/emptiness_wallpaper_by_aziointelli.png" class="img-responsive">
+          <span class="big_friendly_letters_2">Your comment seems to be empty. Please write something.</span>
+        </div>
+<!-- Below is a thank you message for when someone has commented. This is accessed through the main.py file through redirect. -->
+        <div class="col-md-9 contents concept" id="thank_you">
+          <p class="concept-title">
+            THANK YOU FOR COMMENTING!
+          </p>
+          <span class="big_friendly_letters_2">Getting feedback is the best way of learning anything about anything and anyone.</span>
+        </div>
+<!-- Below is where I generate the comment section, including displaying any comments that have been given earlier. -->
+  		</div>
+  		<div class="row">
+        <div class="col-md-12 bar">
+          <h4>If you have comments, suggestions or other feedback, please write them below. Thank you!</h4>
+        </div> 
+        <div class="col-md-12 bar">
+          <form align="center" action="/comments" method="post">
+            <label>Your name:
+              <div>
+                <textarea class="text_name" name="name" rows="1"></textarea>
+              </div>
+            </label>
+            <label>Your comment:
+              <div>
+                <textarea class="text_content" name="content" rows="5"></textarea>
+              </div>
+            </label>
+            <div>
+              <input type="submit" value="Post Your Comment">
+            </div>
+          </form>
+        </div>
+        <div class="col-md-12 comments">
+          <h4>Previous Comments:</h4>
+          {% for comment in comments %}
+            {% if comment.content != '' %}
+             {% if comment.name != '' %}
+                <b>{{ comment.name }}</b> wrote:
+              {% else %}
+                <b>Anonymous</b> wrote:
+              {% endif %}
+              <blockquote>{{ comment.content }}</blockquote>  
+            {% endif %}
+            <div>{{ error }}</div>
+          {% endfor %}        
+        </div>
+        <div class="col-md-12 bar">
+  			 <h3>Jens B&auml;ckvall 2016<br>
+          <small>jensbackvall@t-nova.org</small></h3>
+        </div>
+  	</div>
+<!-- Below is a bit of Javascript that points the page to the welcome message when the page loads. -->
+    <script>
+    if (!document.location.hash){
+    document.location.hash = 'welcome';}
+    </script>
+  </body>
