@@ -1,0 +1,159 @@
+body {
+	background: url("images/bgroundape.jpg");
+	background-size: 4%;
+	background-repeat: repeat;
+}
+
+div.contents {
+	padding: 15px;
+	display: none;
+	height: 670px;
+	overflow-y: scroll;
+}
+
+div.contents:target {
+	display: block;
+}
+
+div.main {
+	height: 500px;
+}
+
+div.menu {
+	height: 670px;
+	overflow-y: scroll;
+}
+
+.text_name {
+	min-width: 35%;
+}
+
+.text_content {
+	min-width: 80%;
+}
+
+.bar {
+	background-color: #C5CeB2;
+	border-radius: 10px;
+	color: black;
+	text-shadow: none;
+	text-align: center;
+	padding: 10px;
+	border-style: solid;
+	border-width: medium;
+	border-color: white;
+}
+
+.comments {
+	background-color: #C5CeB2;
+	border-radius: 10px;
+	color: black;
+	text-shadow: none;
+	text-align: left;
+	padding: 10px;
+	border-style: solid;
+	border-width: medium;
+	border-color: white;
+}
+
+.concept {
+	background-color: #C5CeB2;
+	border-radius: 10px;
+	color: black;
+	text-shadow: none;
+	text-align: left;
+	padding: 20px;
+	margin: 10px auto;
+	border-style: solid;
+	border-width: medium;
+	border-color: white;
+}
+
+.concept-title {
+	color: #871919;
+	text-align: center;
+	font-size: 30px;
+	text-shadow: 5px 5px 10px #7A1616;
+	font-weight: bold;
+}
+
+.concept-description {
+	padding: 10px;
+}
+
+.part-concept {
+	background-color: #D6DDC9;
+	border-radius: 5px;
+	color: black;
+	text-shadow: none;
+	text-align: left;
+	padding: 20px;
+	margin: 10px auto;
+	border-style: solid;
+	border-width: thin;
+	border-color: black;
+}
+
+.part-concept-title {
+	color: #9F4747;
+	text-align: left;
+	font-size: 20px;
+	text-shadow: 5px 5px 10px #871919;
+	font-weight: bold;
+}
+
+table th, td {
+	border: 1px solid #3D5C00;
+	border-collapse: collapse;
+}
+th, td {
+	padding: 15px;
+}
+
+.specialfont-1 {
+	font-family: Arial;
+	color: #3333FF;
+	font-weight: bold;
+}
+
+.specialfont-2 {
+	font-family: Arial;
+	color: #7A005C;
+	font-weight: bold;
+}
+
+.specialfont-3 {
+	font-style: italic;
+	color: #7A005C;
+}
+
+.specialfont-4 {
+	font-style: Arial;
+	color: #CC0099;
+	font-weight: bold;
+}
+
+.big_friendly_letters {
+	font-style: Arial;
+	font-weight: bolder;
+	color: red;
+	text-shadow: -1px 0 yellow, 0 1px yellow, 1px 0 yellow, 0 -1px yellow;
+}
+
+.big_friendly_letters_2 {
+	font-style: Arial;
+	font-weight: bolder;
+	font-size: 200%;
+	color: red;
+	text-shadow: -3px 0 yellow, 0 3px yellow, 3px 0 yellow, 0 -3px yellow;
+}
+
+.orange_text {
+	font-family: Arial;
+	color: orange;
+}
+
+.purple_text {
+	font-family: Arial;
+	color: purple;
+}
