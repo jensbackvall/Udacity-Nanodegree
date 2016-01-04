@@ -1,0 +1,94 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: jabjai_heavy;
+	src: url("jabjai_heavy.TTF");
+}
+
+body {	
+	background-color: gray;
+	background-image: url("IMAGES/Background-text.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 20px;
+    font-family: verdana;
+    font-size: 18px;
+    text-align: left;
+    color: white;
+    padding: 20px 20px 0 20px;
+}
+
+@media only screen and (max-device-width: 768px) and (orientation: portrait) {
+	body {
+		background-image: url("IMAGES/Background-small-portrait.png");
+    	font-size: 27px;
+	}
+	div.text-box-38 {
+		width: 48%;
+		height: 1000px;
+	}
+	div.text-box-img-left {
+		width: 48%;
+		height: 1000px;
+	}
+}
+
+@media only screen and (max-device-width: 1024px) and (orientation: landscape) {
+	body {
+		background-image: url("IMAGES/Background-small-landscape.png");
+    	font-size: 22px;
+	}
+	div.text-box-38 {
+		width: 48%;
+		height: 620px;
+	}
+	div.text-box-img-left {
+		width: 48%;
+		height: 620px;
+	}
+}
+
+.text-box-38 {
+	width: 38%;
+	height: 600px;
+}
+
+.text-box-img-left {
+	width: 38%;
+	height: 600px;
+}
+
+.kapowtext {
+	font-family: jabjai_heavy;
+	color: black;
+	font-size: 1.5em;
+}
+
+.text-box-img-left img {
+	float: left;
+	max-height: 450px;
+	padding: 0 10px 0 0;
+}
+
+ul {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+ul li {
+	display: inline;
+	padding: 10px;
+	font-family: 'Chewy', cursive;	
+}
+
+a:link {
+	color: white;
+}
+
+a:visited {
+	color:white;
+}
